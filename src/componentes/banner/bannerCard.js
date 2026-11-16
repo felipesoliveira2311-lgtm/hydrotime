@@ -3,9 +3,9 @@ const bannerCardIniciar=()=>{
 const  bannerCard = document.querySelector('#bannerCard');
 
 
-const assetsImg = '/assets_site_iot_separados/BANNER/solucoes/'
+const assetsImg = '/hydrotime-/src/assets/banner/solucoes/'
 
-const assetsIcone = '/assets_site_iot_separados/iconesSVG/'
+const assetsIcone = '/hydrotime-/src/assets/icones/'
 
 let indice = 0;
 
@@ -23,7 +23,7 @@ const cards = [
     descricaoCard:'Monitore a umidade, temperatura e nutrientes do solo em tempo real.',
     botaoCard:'Saiba mais',
 
-    imagem: assetsImg + 'sensor.jpg',
+    imagem: assetsImg + 'sensor.JPG',
 }, 
     
     {
@@ -32,7 +32,7 @@ const cards = [
     descricaoCard:'Controle o ambiente da sua estufa em tempo real.',
     botaoCard:'Saiba mais',
 
-    imagem: assetsImg + 'monitoramento.jpg',
+    imagem: assetsImg + 'monitoramento.JPG',
 },
 
 {
@@ -41,7 +41,7 @@ const cards = [
     descricaoCard:'Acione a irrigação de forma automática e eficiente.',
     botaoCard:'Saiba mais',
 
-    imagem: assetsImg + 'irrigacao.jpg',
+    imagem: assetsImg + 'irrigacao.JPG',
 },
 
 {
@@ -50,7 +50,7 @@ const cards = [
     descricaoCard:'Acompanhe o desenvolvimento das suas plantas.',
     botaoCard:'Saiba mais',
 
-    imagem: assetsImg + 'analise.jpg',
+    imagem: assetsImg + 'analise.JPG',
 },
 
 {
@@ -59,7 +59,7 @@ const cards = [
     descricaoCard:'Visualize dados, receba alertas e tome decisões com facilidade',
     botaoCard:'Saiba mais',
 
-    imagem: assetsImg + 'plataforma.jpg',
+    imagem: assetsImg + 'plataforma.JPG',
 },
 
 {
@@ -68,7 +68,7 @@ const cards = [
     descricaoCard:'Dados climáticos precisos para um plantio mais seguro.',
     botaoCard:'Saiba mais',
 
-    imagem: assetsImg + 'alertas.jpg',
+    imagem: assetsImg + 'alertas.JPG',
 },
 
 ]
@@ -109,7 +109,7 @@ const criarBanner=(objeto, indice)=>{
 
                     <div>
                         <p>${cards[indice].descricaoCard}</p>
-                        <a class="saibaMais" href='/HTML/SOLUCOES/solucoes.html'>${cards[indice].botaoCard}</a>
+                        <a class="saibaMais" href='/hydrotime-/src/paginas/solucoes/solucoes.html'>${cards[indice].botaoCard}</a>
                         
                     </div>
                 </div>

@@ -1,7 +1,7 @@
 const importarFooter = document.getElementById('footer');
 
 const buscarFooter = () => {
-    fetch('/COMPONENTES/FOOTER/footer.html')
+    fetch('/hydrotime-/src/componentes/footer/footer.html')
         .then(response => response.text())
         .then(data => {
             importarFooter.innerHTML = data;

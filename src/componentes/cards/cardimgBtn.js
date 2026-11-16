@@ -1,12 +1,12 @@
 const cardSolucoes = document.querySelector('#card.solucoes');
 
-const assetsImg = '/assets_site_iot_separados/BANNER/solucoes/';
-const assetsIcone = '/assets_site_iot_separados/iconesSVG/';
+const assetsImg = '/hydrotime-/src/assets/banner/solucoes/';
+const assetsIcone = '/hydrotime-/src/assets/icones/';
 
 const cards = [
     
     {
-        imagem: assetsImg + 'sensor.jpg',
+        imagem: assetsImg + 'sensor.JPG',
         icone: assetsIcone + 'leaf.svg',
         titulo:'Sensor de Solo',
         descricao:'Monitora umidade, temperatura e luminosidade do solo.',
@@ -14,7 +14,7 @@ const cards = [
     }, 
 
     {
-        imagem: assetsImg + 'monitoramento.jpg',
+        imagem: assetsImg + 'monitoramento.JPG',
         icone: assetsIcone + 'dispositivo.svg',
         titulo:'Monitoramento de Estufas',
         descricao:'Controle o ambiente da sua estufa em tempo real.',
@@ -22,7 +22,7 @@ const cards = [
     },
 
     {
-        imagem: assetsImg + 'irrigacao.jpg',
+        imagem: assetsImg + 'irrigacao.JPG',
         icone: assetsIcone + 'umidade.svg',
         titulo:'Irrigação Inteligente',
         descricao:'Acione a irrigação de forma automática e eficiente.',
@@ -30,7 +30,7 @@ const cards = [
     },
 
     {
-        imagem: assetsImg + 'analise.jpg',
+        imagem: assetsImg + 'analise.JPG',
         icone: assetsIcone + 'grafico.svg',
         titulo:'Análise de Crescimento',
         descricao:'Acompanhe o desenvolvimento das suas plantas.',
@@ -38,7 +38,7 @@ const cards = [
     },
 
     {
-        imagem: assetsImg + 'plataforma.jpg',
+        imagem: assetsImg + 'plataforma.JPG',
         icone: assetsIcone + 'dispositivo.svg',
         titulo:'Plataforma de Gestão',
         descricao:'Visualize dados, receba alertas e tome decisões com facilidade.',
@@ -76,7 +76,7 @@ const criarCard=(pagina, array)=>{
                             <p class="descricao_card">${card.descricao}</p>
                         </div>
                 
-                        <a class="mais" href="/HTML/FORMULARIO/formulario.html">${card.botao}</a>
+                        <a class="mais" href="/hydrotime-/src/paginas/formulario/formulario.html">${card.botao}</a>
                     </div>
                    
                     `

@@ -1,7 +1,7 @@
 const cardIcone=()=>{
     const comoFunciona = document.querySelector('#cardIcone.comoFunciona');
 
-    const assetsIcone = '/assets_site_iot_separados/iconesSVG/'
+    const assetsIcone = '/hydrotime-/src/assets/icones/'
 
     const cardIcone = [
         {
