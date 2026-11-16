@@ -146,7 +146,7 @@
 
 @media(max-width:700px){
     #conteiner_banner_comoFunciona{
-        background-image: linear-gradient( to top, white 80%, transparent 100%), url('/hydrotime-/src/assets/imagens/imagens_blog_4k/todos/04_solucoes_irrigacao.jpg');
+        background-image: linear-gradient( to top, white 80%, transparent 100%), url('/hydrotime-/src/assets/imagens/comofunciona.png');
         min-height:0px;
     }
 }
