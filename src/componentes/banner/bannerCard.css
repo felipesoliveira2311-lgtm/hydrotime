@@ -190,7 +190,22 @@
         min-width:0;
         max-width:100%;
     }
+
+      #proximo{
+        position:absolute;
+        z-index:2;
+        right:-10px;
+        top:280px;
+    }
+
+    #anterior{
+        position:absolute;
+        z-index:2;
+        left:-10px;
+        top:280px;
+    }
 }
+
 
 @media (max-width:500px){
     #bannerCard{
@@ -209,5 +224,19 @@
 
     .conteinerImagemBannerCard img{
         max-height:clamp(180px,55vw,240px);
+    }
+
+       #proximo{
+        position:absolute;
+        z-index:2;
+        right:-10px;
+        top:220px;
+    }
+
+    #anterior{
+        position:absolute;
+        z-index:2;
+        left:-10px;
+        top:220px
     }
 }
