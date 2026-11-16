@@ -5,6 +5,7 @@
     border-radius:30px;
     background-color:white;
     box-shadow:0 4px 12px var(--borda);
+    display:relative;
 }
 
 #bannerCard header{
