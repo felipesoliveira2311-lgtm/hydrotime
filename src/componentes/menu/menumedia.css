@@ -94,6 +94,15 @@
         white-space:normal;
     }
 
+    #contato_principal:hover{
+        background:green;
+    }
+
+    #contato_principal:hover{
+        background:none;
+        color:green;
+    }
+
     #logo{
         display:none;
     }
