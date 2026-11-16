@@ -212,3 +212,118 @@
         font-size:25px;
     }
 }
+
+/* Controles e proporções do carrossel em telas menores */
+@media (max-width:1000px){
+    #bannerCard{
+        padding:clamp(24px,4vw,40px) clamp(16px,3vw,28px);
+    }
+
+    #bannerCard header{
+        flex-direction:column;
+        align-items:center;
+        gap:4px;
+    }
+
+    #bannerCard header > div:first-child{
+        width:100%;
+    }
+
+    .botoesBannerCard{
+        position:static;
+        display:flex;
+        width:100%;
+        justify-content:center;
+        gap:14px;
+        margin:14px 0 4px;
+    }
+
+    #anterior,
+    #proximo{
+        position:static;
+        width:clamp(44px,6vw,52px);
+        height:clamp(44px,6vw,52px);
+        border:1px solid var(--borda);
+        border-radius:50%;
+        box-shadow:0 4px 12px var(--borda);
+        font-size:24px;
+        line-height:1;
+    }
+
+    .mainBannerCard{
+        flex-direction:column-reverse;
+        align-items:stretch;
+        gap:18px;
+    }
+
+    .conteinerImagemBannerCard{
+        flex:none;
+        width:100%;
+        max-width:none;
+        min-width:0;
+        margin:0;
+    }
+
+    .conteinerImagemBannerCard img{
+        display:block;
+        width:100%;
+        max-height:clamp(210px,38vw,320px);
+        object-position:center;
+        border-radius:16px;
+    }
+
+    .corpoCardBannerCard{
+        width:100%;
+        min-width:0;
+        align-items:center;
+        text-align:center;
+    }
+
+    .corpoCardBannerCard > div:first-child{
+        align-items:center;
+        justify-content:center;
+        gap:12px;
+    }
+
+    .corpoCardBannerCard div:nth-child(2){
+        width:100%;
+        max-width:650px;
+        min-width:0;
+        align-items:center;
+        gap:14px;
+    }
+
+    .corpoCardBannerCard div p{
+        max-width:50ch;
+        margin:0;
+        padding:0;
+        font-size:clamp(.9rem,1.8vw,1rem);
+    }
+
+    .saibaMais{
+        width:min(100%,310px);
+        min-width:0;
+        max-width:100%;
+    }
+}
+
+@media (max-width:500px){
+    #bannerCard{
+        padding:24px 16px;
+    }
+
+    #anterior,
+    #proximo{
+        width:44px;
+        height:44px;
+        font-size:22px;
+    }
+
+    .corpoCardBannerCard div h3{
+        font-size:clamp(1.15rem,5.5vw,1.4rem);
+    }
+
+    .conteinerImagemBannerCard img{
+        max-height:clamp(180px,55vw,240px);
+    }
+}

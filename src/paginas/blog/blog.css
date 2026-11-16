@@ -830,3 +830,40 @@ main {
     #painel-integrantes .equipe-final { gap: 16px; padding: 20px; }
     #painel-integrantes .equipe-final-icone { flex-basis: 54px; font-size: 42px; }
 }
+
+/* Mantém o conteúdo do banner legível em telas estreitas */
+@media (max-width:520px){
+    .blog-hero{
+        min-height:300px;
+        padding:clamp(22px,6vw,30px) clamp(18px,5vw,24px);
+    }
+
+    .blog-hero-conteudo{
+        width:100%;
+        max-width:100%;
+        min-width:0;
+    }
+
+    .blog-destaque{
+        max-width:100%;
+        font-size:11px;
+        letter-spacing:clamp(.4px,.35vw,1px);
+        line-height:1.4;
+        overflow-wrap:anywhere;
+    }
+
+    .blog-hero h1{
+        width:100%;
+        max-width:100%;
+        font-size:clamp(27px,7.6vw,32px);
+        line-height:1.12;
+        overflow-wrap:anywhere;
+    }
+
+    .blog-descricao{
+        max-width:100%;
+        font-size:15px;
+        line-height:1.6;
+        overflow-wrap:anywhere;
+    }
+}

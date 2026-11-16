@@ -85,3 +85,58 @@
         display:none;
     }
 /*-------------------------------*/
+/* Ajustes da sidebar para telas baixas e controles do ícone */
+@media (max-width:1050px){
+    .conteiner_icone button{
+        display:grid;
+        place-items:center;
+        padding:0;
+        border:0;
+        background:transparent;
+        line-height:0;
+    }
+
+    #principal_bar{
+        box-sizing:border-box;
+        height:100vh;
+        height:100dvh;
+        overflow-y:auto;
+        overscroll-behavior:contain;
+        -webkit-overflow-scrolling:touch;
+    }
+
+    #nav_principal{
+        width:100%;
+    }
+
+    #nav_principal ul{
+        display:flex;
+        flex-direction:column;
+        gap:clamp(2px,1.5vh,12px);
+        padding:clamp(72px,11vh,100px) 0 16px;
+    }
+
+    #principal_bar li{
+        padding:clamp(8px,1.6vh,18px) clamp(20px,4vw,30px);
+    }
+
+    #principal_bar a{
+        display:block;
+        line-height:1.4;
+    }
+
+    .conteiner_btn{
+        display:block;
+        width:auto;
+        max-width:none;
+        margin:clamp(8px,1vh,14px) 20px 24px;
+        text-align:left;
+    }
+
+    #contato_principal{
+        display:inline-block;
+        max-width:100%;
+        padding:12px 14px;
+        white-space:normal;
+    }
+}
