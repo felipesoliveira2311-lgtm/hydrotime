@@ -2,7 +2,7 @@ const importarMenu = document.getElementById('menu');
 
 
 const buscarMenu = () =>{
-   fetch('../HTML/menu.html').then(response => response.text()).then(data =>{
+   fetch('/HTML/menu.html').then(response => response.text()).then(data =>{
 
     importarMenu.innerHTML = data;
 
