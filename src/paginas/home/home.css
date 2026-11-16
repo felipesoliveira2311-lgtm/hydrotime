@@ -1,0 +1,193 @@
+
+
+
+/* ===== Banner ===== */
+#conteiner_banner{
+    background-image: linear-gradient( to right, white 50%, transparent 70%), url('/assets_site_iot_separados/BANNER//beneficios.png');
+    background-size:cover;
+    background-position: center;
+    min-height:530px;
+
+    border-bottom: 5px solid var(--principal);
+}
+
+/* ===== SETORES ===== */
+#cardImg{
+    flex-wrap: nowrap;
+}
+
+#cardImg article{
+    min-width:100px;
+    min-height:0px;
+}
+
+
+/* Botões banner princiapl */
+#btn_banner_principal{
+    display:flex;
+    gap:20px;
+}
+
+/* Estilização dos bonotes do banner principal*/
+#btn_solucao, #btn_como_funciona{
+    padding:10px clamp(10px,10vw, 100px);
+    outline:1px solid var(--borda);
+    border-radius:5px;   
+    margin-block:50px;
+}
+
+/* Conheça a solução cor*/
+#btn_solucao{
+    background-color:var(--principal);
+    color:white;
+}
+
+#btn_solucao:hover{
+    background-color: var(--hoverprincipal);
+    transform: translateY(2px);
+    transition:.2s;
+    box-shadow:0 4px 12px var(--borda)
+}
+
+/* Ver como funciona */
+#btn_como_funciona{
+    background-color:white;
+}
+
+#btn_como_funciona:hover{
+    background-color: var(--hoverwhite);
+    color:white;
+    transform: translateY(2px);
+    transition:.2s;
+    box-shadow:0 4px 12px var(--borda);
+    
+}
+
+/* ===== Beneficios ===== */
+
+#beneficio_home{
+    display:flex;
+    gap:30px;
+}
+
+#beneficio_home div{
+    display:flex;
+    gap:10px;
+
+    padding:10px;
+    border-radius:5px;
+
+    align-items: center;
+}
+
+#beneficio_home img{
+    width:35px;
+}
+    /* os cards somem quando a tela for menor que 800px e a imagem do header troca de posição. */
+@media (max-width:800px){
+    #conteiner_banner{
+        background-image: linear-gradient( to top, white 70%, transparent 100%), url('/assets_site_iot_separados/BANNER/home.png');
+        min-height:auto;
+    }
+
+    #btn_banner_principal{
+        display:none;
+    }
+
+    #beneficio_home{
+        display:none;
+    }
+}
+
+
+/* ===== CARDS SETORES ===== */
+
+#cardImg article:nth-child(2):hover{
+        transform:translateY(-10px);
+        box-shadow:0 12px 35px var(--borda);
+    }
+
+    #cardImg article:nth-child(1), #cardImg article:nth-child(3){
+        transform:translateY(30px);
+        padding-bottom:20px;
+}
+
+
+     #cardImg article:nth-child(1):hover, #cardImg article:nth-child(3):hover{
+        transform: translateY(15px);
+        box-shadow:0 12px 35px var(--borda);
+     }
+
+     @media(max-width:800px){
+   #cardImg article:nth-child(2):hover{
+        transform:translateY(-10px);
+        box-shadow:none;
+    }
+
+     #cardImg article:nth-child(1):hover, #cardImg article:nth-child(3):hover{
+        transform: translateY(15px);
+        box-shadow:none;
+
+     }
+    }
+
+
+
+/* ===== Como Funciona ===== */
+
+#conteiner_banner_comoFunciona{
+    margin-top:100px;
+    background-image: linear-gradient( to right, white 50%, transparent 70%), url('/assets_site_iot_separados/imagens/imagens_blog_4k/TODOS/04_solucoes_irrigacao.jpg');
+    background-size:cover;
+    background-position: bottom;
+    min-height:320px;
+
+}
+
+@media(max-width:700px){
+    #conteiner_banner_comoFunciona{
+        background-image: linear-gradient( to top, white 80%, transparent 100%), url('/assets_site_iot_separados/imagens/imagens_blog_4k/TODOS/04_solucoes_irrigacao.jpg');
+        min-height:0px;
+    }
+}
+
+/* ===== SISTEMA ===== */
+
+#header_sistema{
+    display:flex;
+    gap:50px;
+    flex-wrap: wrap;
+    align-items: end;
+}
+
+/* headerMain */
+#mainHeader.sistema header{
+    flex-direction: column;
+}
+
+#tela_app{
+    flex:2;
+    min-width:clamp(50%,5vw,100%);
+    max-height: 400px;
+    border-radius:20px;
+    border:15px solid;
+}
+
+#tela_app img{
+    object-fit: cover;
+    object-position: top;
+    max-height:360px;
+    width:100%;
+    height:auto;
+}
+
+.dados_sistema{
+    display:flex;
+    gap:10px;
+    align-items: end;
+    padding:20px;
+}
+
+#banner_main{
+    margin-top:20px;
+}

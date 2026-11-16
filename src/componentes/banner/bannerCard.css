@@ -1,0 +1,214 @@
+/* TOPO BANNER */
+/* ALINHAMENTO DO TOPO */
+
+#bannerCard{
+    border-radius:30px;
+    background-color:white;
+    box-shadow:0 4px 12px var(--borda);
+    padding:50px 50px;
+    margin-top:50px;
+}
+
+#bannerCard header{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* CONTEUDO HEADER */
+#bannerCard header span{
+    font-size:clamp(0.8rem, 1vw,1rem);
+    color:var(--principal);
+}
+
+/* BOTÕES */
+.botoesBannerCard button{
+    width:40px;
+    height:40px;
+    border-radius:40px;
+    border:3px solid var(--borda);
+    background: white;
+
+    color: var(--principal);
+    font-size:20px;
+}
+
+.botoesBannerCard button:hover{
+    background-color:var(--fundo)
+}
+
+.mainBannerCard{
+    display:flex;
+    justify-content: space-between;
+    gap:20px;
+}
+
+.corpoCardBannerCard{
+   display:flex;
+   justify-content: center;
+   flex-direction: column;
+   gap:10px;
+}
+
+.corpoCardBannerCard div{
+    display:flex;
+    gap:20px;
+}
+
+.corpoCardBannerCard div:nth-child(2){
+    display:flex;
+    flex-direction: column;
+    width:350px;
+    line-height:1.5;
+    justify-content: end;
+    align-items: end;
+}
+
+.corpoCardBannerCard div h3{
+    font-size:clamp(1.3rem, 4vw, 1.6rem);
+
+}
+
+.corpoCardBannerCard div p{
+    margin-left:50px;
+    margin-top:20px;
+    font-size:clamp(0.9rem,2vw,1rem);
+
+}
+
+
+.saibaMais{
+    min-width:clamp(200px,30vw,310px);
+    padding:10px;
+    text-align: center;
+    background-color:green;
+    color:white;
+    border-radius:10px;
+}
+
+.saibaMais:hover{
+    background-color: var(--hoverprincipal);
+    transition:.5s;
+    transform:translateY(3px);
+}
+
+
+/* TAMANHO DA IMAGEM */
+.conteinerImagemBannerCard{
+    flex:1;
+    max-width:60%;
+    position:relative;
+}
+
+.conteinerImagemBannerCard img{
+    width:100%;
+    max-height:300px;
+    object-fit: cover;
+    object-position: bottom;
+    border-radius:50px;
+}
+
+@media(max-width:1000px){
+
+    #bannerCard{
+        padding:50px 10px;
+        position:relative;
+    }
+
+    #bannerCard header{
+        justify-content: center;
+        text-align: center;
+    }
+
+    .botoesBannerCard{
+        margin-block:20px;
+    }
+
+    #anterior{
+        position:absolute;
+        width:80px;
+        height:80px;
+        border:none;
+        box-shadow:0 4px 12px var(--borda);
+        left:-30px;
+        top:260px;        
+        z-index:1;
+        font-size:40px;
+    }
+
+    #proximo{
+        position:absolute;
+        width:80px;
+        height:80px;
+        border:none;
+        box-shadow:0 4px 12px var(--borda);
+        right:-30px;
+        top:260px;
+        z-index:1;
+        font-size:40px;
+    }
+
+    .corpoCardBannerCard div p{
+        margin-left:0px;
+        padding-inline:10px;
+    }
+
+
+
+    .conteinerImagemBannerCard{
+    min-width:100%;
+    margin-block:10px;
+}
+
+    .conteinerImagemBannerCard img{
+            border-radius:0px;
+            width:100%;
+    }
+
+    .mainBannerCard{
+        flex-direction: column-reverse;
+        align-items: center;  
+}
+
+.corpoCardBannerCard{
+    align-items: center;
+    text-align: center;
+}
+
+.corpoCardBannerCard div:nth-child(2){
+    align-items: center;
+}
+
+
+
+.saibaMais{
+    min-width:70%;
+}
+}
+
+@media(max-width:500px){
+     #anterior{
+        position:absolute;
+        width:50px;
+        height:50px;
+        border:none;
+        box-shadow:0 4px 12px var(--borda);
+        left:-10px;
+        top:280px;        
+        z-index:1;
+        font-size:25px;
+    }
+
+    #proximo{
+        position:absolute;
+        width:50px;
+        height:50px;
+        border:none;
+        box-shadow:0 4px 12px var(--borda);
+        right:-10px;
+        top:280px;
+        z-index:1;
+        font-size:25px;
+    }
+}

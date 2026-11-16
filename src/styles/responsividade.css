@@ -1,0 +1,29 @@
+.espacamento{
+    margin:0px clamp(0px,calc(8vw - 20px),150px);
+    padding-top:50px;
+}
+
+.banner{
+    margin:0px clamp(0px,8vw,150px);
+    padding-top:50px;
+}
+
+.conteudo_banner{
+    max-width:clamp(370px,50vw,650px);
+}
+
+section{
+   
+}
+
+#banner{
+    background-color: red;
+}
+
+@media(max-width:800px){
+    #conteiner_banner{
+        padding-bottom:30px;
+    }
+}
+
+

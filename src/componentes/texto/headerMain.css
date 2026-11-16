@@ -1,0 +1,26 @@
+/* ===== Header Main ===== */
+.flex_headerMain{
+    display:flex;
+    justify-content: space-between;
+}
+
+.flex_headerMain div{
+    max-width: 400px;
+}
+
+.flex_headerMain p{
+    display:flex;
+    align-items: center;
+    max-width: 400px;
+    margin-bottom:20px;
+
+    color:var(--paragrafo);
+}
+
+@media (max-width:800px){
+    .flex_headerMain{
+        display:block;
+    }
+    
+ 
+}

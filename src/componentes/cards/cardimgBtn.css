@@ -1,0 +1,165 @@
+#card{
+    display:flex;
+    flex-wrap: wrap;
+    gap:20px;
+    justify-content: center;
+    margin-bottom:100px;
+}
+
+
+.corpo_card{
+    max-width:clamp(200px, 50vw, 400px);
+    display:grid;
+    grid-template-rows: 200px;
+    position:relative;
+
+    box-shadow:0 4px 12px var(--borda);
+    border-radius:20px;
+
+    background-color: white;
+
+    transition:.5s;
+}
+
+.corpo_card:hover{
+    transform:translateY(-5px);
+}
+
+.imagem_card{
+    max-height:210px;
+}
+
+.imagem_card img{
+    width:100%;
+    max-height:210px;
+    object-fit:cover;
+    object-position: bottom;
+    border-radius:20px 20px 0px 0px;
+}
+
+.borda_icone{
+    width:clamp(20px,9vh,60px);
+    height:clamp(20px,9vh,60px);
+    border-radius:60px;
+    outline: 1px solid var(--borda);
+    background: white;
+
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    position:absolute;
+
+    left:20px;
+    top:165px;
+}
+
+.borda_icone img{
+    width:30px;
+}
+
+.card_main{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.conteudo_card{
+    flex:2;
+    margin-top:auto;
+    padding:clamp(3px,1vh,15px) clamp(10px,3vw,30px);    
+}
+
+.conteudo_card h3{
+    margin-block:15px;
+    font-size:clamp(1rem, 3vw,1.3vw);
+}
+
+.conteudo_card p {
+    font-size:clamp(0.8rem,3vw,1rem);
+    line-height:1.5;
+}
+
+
+
+
+.mais{
+    height:100%;
+    max-width:clamp(50px,100vw,50px);
+    max-height:clamp(50px,100vh,50px);
+    border-radius:50px;
+    box-shadow: 0 4px 12px var(--borda);
+    background: white;
+    color:green;
+
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    margin:0px 10px;
+    
+    flex:1;
+
+    font-size:20px;
+}
+
+.mais:hover{
+    background-color: var(--fundo);
+}
+
+@media(max-width:930px){
+
+    #card{
+        flex-wrap: wrap;
+    }
+
+    .corpo_card{
+        min-width:clamp(350px, 90vw, 800px);
+        display:flex;
+        border-radius:20px;
+    }
+
+    .borda_icone{
+        width:50px;
+        height:50px;
+
+        top:10px;    
+        left:10px;
+    }
+
+    .borda_icone img{
+        width:25px;
+    }
+
+    .imagem_card{
+        min-width:60%;
+    }
+
+    .imagem_card img{
+        min-height:100%;
+        border-radius:20px 0px 0px 20px;
+    }
+
+    .card_main{
+        flex-direction: column;
+    }
+
+    .conteudo_card{
+        max-width: 100%;
+        margin-bottom:auto;
+    }
+
+    .card_main{
+        align-items: start;
+    }
+
+    .mais{
+       display:none;
+    }
+    
+
+
+}
+
+
+
+
+

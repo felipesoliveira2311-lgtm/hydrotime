@@ -1,0 +1,77 @@
+/*------------------ Configurações gerais ------------------------------*/
+
+
+    
+/*-------------------- Barra principal de navegação banner -------------*/
+
+/* conteiner do banner principal e imagem */
+
+
+      .conteiner_icone{
+        display:none;
+      }
+
+
+        #principal_bar{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+           padding-block:40px;
+           border-bottom:5px solid green;
+        }
+
+
+
+
+/* logo da barra principal */
+    #logo{
+        max-width: 10%;
+        width:10%;
+    }
+
+
+
+/* links de navegação da barra principal */
+    #nav_principal{
+        min-height: 10px;
+        height:auto;
+        width:50%;       
+    }   
+
+    #nav_principal ul{
+        display:flex;
+        gap:55px;
+        list-style-type: none;
+    }
+
+    #principal_bar a{
+        text-decoration: none;
+    }
+
+
+
+/* Botao de contato da barra principal */
+
+    .conteiner_btn{
+        width:30%;
+        max-width:30%;
+    }
+
+    #contato_principal{
+        padding:15px;
+        
+        background-color:#006d00e6;
+        color:white;
+        border-radius:5px;
+        box-shadow: 0px 8px 24px 0px rgba(128, 128, 128, 0.352);
+    }
+
+#nav_principal ul li a:hover{
+    color:green;
+
+}
+
+#contato_principal:hover{
+    background-color: rgb(0, 79, 0);
+}

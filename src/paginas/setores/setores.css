@@ -1,0 +1,50 @@
+.mais{
+    display:none;
+}
+
+#cardImg article{
+     min-height:0;
+    height:auto;
+}
+
+#banner_main{
+    margin-top:50px;
+}
+
+
+
+@media(max-width:1370px){
+    #cardImg{
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: auto;
+    }
+
+    #cardImg article{
+        min-width:200px;
+    }
+    
+}
+
+@media(max-width:750px){
+    #cardImg{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #banner_main{
+        margin-top:0px;
+    }
+
+}
+
+@media(max-width:450px){
+    #cardImg{
+        justify-content: center;
+    }
+    
+    #cardImg article{
+        margin-top:-40px;
+    }
+}
