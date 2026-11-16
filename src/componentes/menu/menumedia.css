@@ -1,92 +1,18 @@
-
-@media (max-width: 1050px){
-            /* principal_bar menu expansível */
-
-/* Aparencia da barra */
-
+@media (max-width:1050px){
     .conteiner_icone{
-        padding:10px;
-        border:1px solid rgba(0, 128, 0, 0.61);
-        border-radius:10px;
-        background-color: white;
+        position:fixed;
+        top:20px;
+        right:10px;
         z-index:10;
         display:flex;
-        align-items: center;
-        justify-content: center;
+        align-items:center;
+        justify-content:center;
+        padding:10px;
+        border:1px solid rgba(0,128,0,.61);
+        border-radius:10px;
+        background:white;
     }
 
-    #icone_sidebar{
-        display:block;
-        object-fit: cover;        
-        z-index:10;
-    }
-
-    #principal_bar, #principal_bar ul{
-        display:block;
-        text-align: start;
-        padding:0px;
-    }
-    
-     #principal_bar{
-        box-shadow: 0 10px 20px 0 #00000026;
-        position:fixed;
-        border-radius:12px;
-        width:70%;
-        background-color: white;
-        height:100vh;
-        z-index:10;
-        transform: translateX(-100%);
-        transition: 0.3s;  
-     }
-
-     #principal_bar.open_sidebar{
-        transform: translateX(0);
-     
-     }
-
-    #principal_bar li{
-        padding:30px;   
-
-    }
-    /*-------------------------------*/
-
-
-    /* Ajuste do icone para abrir e fechar sidebar */
-    .conteiner_icone {
-    position: fixed;
-    top: 20px;
-    right: 10px;
-  
-}
-
-#icone_sidebar {
-    width: 30px;
-    cursor: pointer;
-}
-/*----------------------------------------------*/
-
-/* Ajuste do botão de contato*/
-    .conteiner_btn{
-        text-align:end;
-        margin-left:10px;
-        display:inline;
-
-    }
-
-    #contato_principal{
-        background-color: white;
-        color:black;
-        box-shadow:none;
-    }
-/*-------------------------------*/
-
-/* Ajusete logo */
-    #logo{
-        display:none;
-    }
-/*-------------------------------*/
-/* Ajustes da sidebar para telas baixas e controles do ícone */
-@media (max-width:1050px){
     .conteiner_icone button{
         display:grid;
         place-items:center;
@@ -96,13 +22,37 @@
         line-height:0;
     }
 
+    #icone_sidebar{
+        display:block;
+        width:30px;
+        cursor:pointer;
+        object-fit:cover;
+    }
+
     #principal_bar{
+        display:block;
+        padding:0;
+        text-align:start;
+        position:fixed;
+        top:0;
+        left:0;
+        z-index:10;
         box-sizing:border-box;
+        width:70%;
         height:100vh;
         height:100dvh;
         overflow-y:auto;
         overscroll-behavior:contain;
         -webkit-overflow-scrolling:touch;
+        border-radius:12px;
+        background:white;
+        box-shadow:0 10px 20px #00000026;
+        transform:translateX(-100%);
+        transition:transform .3s;
+    }
+
+    #principal_bar.open_sidebar{
+        transform:translateX(0);
     }
 
     #nav_principal{
@@ -113,7 +63,8 @@
         display:flex;
         flex-direction:column;
         gap:clamp(2px,1.5vh,12px);
-        padding:clamp(72px,11vh,100px) 0 16px;
+        padding:clamp(56px,10vh,92px) 0 16px;
+        list-style:none;
     }
 
     #principal_bar li{
@@ -137,6 +88,13 @@
         display:inline-block;
         max-width:100%;
         padding:12px 14px;
+        background:white;
+        color:black;
+        box-shadow:none;
         white-space:normal;
+    }
+
+    #logo{
+        display:none;
     }
 }

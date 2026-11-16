@@ -149,10 +149,6 @@ main {
     .blog-artigos {
         grid-template-columns: 1fr;
     }
-
-    .blog-hero h1 {
-        font-size: 32px;
-    }
 }
 
 /* ===== ABAS (Blog | Sobre nós | Integrantes) ===== */
@@ -369,10 +365,6 @@ main {
 .artigo-card[hidden] { display: none; }
 .categoria { transition: background-color 0.2s ease, border-color 0.2s ease; }
 .categoria:hover { border-color: #07552f; }
-@media (max-width: 520px) {
-    .blog-hero { min-height: 280px; padding: 32px 24px; }
-    .blog-hero h1 { font-size: 30px; }
-}
 
 
 /* Ajustes visuais do blog HydroTime */
@@ -406,10 +398,6 @@ main {
     margin-top: 10px;
 }
 .artigo-card[hidden] { display: none; }
-@media (max-width: 520px) {
-    .blog-hero { min-height: 300px; padding: 32px 24px; }
-    .blog-hero h1 { font-size: 31px; }
-}
 
 
 
