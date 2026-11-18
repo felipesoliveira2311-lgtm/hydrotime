@@ -1,0 +1,21 @@
+0000000000000000000000000000000000000000 45af1f0fe89c9a482efd1d7f54b5b5c39f145d0f Felipe Santos <felipe.soliveira2311@gmail.com> 1794796340 -0300	fetch
+cd1a5057f4fc7cf4f6d562ca950956bab4b73955 cd1a5057f4fc7cf4f6d562ca950956bab4b73955 Felipe Santos <felipe.soliveira2311@gmail.com> 1794798834 -0300
+cd1a5057f4fc7cf4f6d562ca950956bab4b73955 cd1a5057f4fc7cf4f6d562ca950956bab4b73955 Felipe Santos <felipe.soliveira2311@gmail.com> 1794799092 -0300	reset: moving to HEAD
+cd1a5057f4fc7cf4f6d562ca950956bab4b73955 45af1f0fe89c9a482efd1d7f54b5b5c39f145d0f Felipe Santos <felipe.soliveira2311@gmail.com> 1794799092 -0300	reset: moving to origin/main
+45af1f0fe89c9a482efd1d7f54b5b5c39f145d0f 2dd4a66461a659be5f104b3e692db43247057059 Felipe Santos <felipe.soliveira2311@gmail.com> 1794799648 -0300	commit: Corrige caminhos do GitHub Pages
+2dd4a66461a659be5f104b3e692db43247057059 5786b82c06325ac466022b8c73e6673bca965bae Felipe Santos <felipe.soliveira2311@gmail.com> 1794799968 -0300	commit: Atualiza cache dos recursos do GitHub Pages
+5786b82c06325ac466022b8c73e6673bca965bae 6b92d7729ee344876ce0f3a4a60d992b71762158 Felipe Santos <felipe.soliveira2311@gmail.com> 1794802061 -0300	commit: Alteração de arquivo em home.css seção ComoFunciona
+6b92d7729ee344876ce0f3a4a60d992b71762158 d402d9501e0516c9218ebcd0f2d5def833fa7908 Felipe Santos <felipe.soliveira2311@gmail.com> 1794847094 -0300	commit: Adicionado pasta blog e beneficios a src/paginas
+d402d9501e0516c9218ebcd0f2d5def833fa7908 f74a2451cf805a0770873c7f894a14f3b5bbf8f5 Felipe Santos <felipe.soliveira2311@gmail.com> 1794847777 -0300	commit: Adiciona as páginas beneficios e blog ao componente de menu
+f74a2451cf805a0770873c7f894a14f3b5bbf8f5 e777ea699bc3019d93446d646f497be0175d62d1 Felipe Santos <felipe.soliveira2311@gmail.com> 1794854701 -0300	commit: Ajusta responsividade do menu e das páginas
+e777ea699bc3019d93446d646f497be0175d62d1 6d2f63671db4d337d3162748e9e6923d7f3fe453 Felipe Santos <felipe.soliveira2311@gmail.com> 1794855128 -0300	commit: Remove regras responsivas redundantes
+6d2f63671db4d337d3162748e9e6923d7f3fe453 98073b1396441e86e6435477c5c8e0a7fd94d0fb Felipe Santos <felipe.soliveira2311@gmail.com> 1794855316 -0300	commit: Atualiza cache dos estilos responsivos
+98073b1396441e86e6435477c5c8e0a7fd94d0fb c8e5cfd05caec01a47fbc8c06039ed65e49d630d Felipe Santos <felipe.soliveira2311@gmail.com> 1794857070 -0300	commit: Retira fundo verde do menu sidebar
+c8e5cfd05caec01a47fbc8c06039ed65e49d630d af0a2686f9a8780e7abc0fb3d140d95013f380b8 Felipe Santos <felipe.soliveira2311@gmail.com> 1794857726 -0300	commit: Devolve os botões para carrossel em bannercard na pagina principal.
+af0a2686f9a8780e7abc0fb3d140d95013f380b8 7f78f3a31f663d681a9fbfea9d9e6742e24c36ac Felipe Santos <felipe.soliveira2311@gmail.com> 1794858585 -0300	commit: Adiciona relative a bannerCard para referencia de botões
+7f78f3a31f663d681a9fbfea9d9e6742e24c36ac e51c0fa2fd06d9b73de67251f4f1c98d8913bab0 Felipe Santos <felipe.soliveira2311@gmail.com> 1794925313 -0300	commit: Corrige posicionamento relativo do BannerCard
+e51c0fa2fd06d9b73de67251f4f1c98d8913bab0 5c2ae08d706d1f9fbf8acdda8d89e6ce641fba4c Felipe Santos <felipe.soliveira2311@gmail.com> 1794927264 -0300	commit: Organiza componentes e adiciona footer em benefícios e blog
+5c2ae08d706d1f9fbf8acdda8d89e6ce641fba4c 70e4c457c9f3d2405cf5429b443d33e420044c9c Felipe Santos <felipe.soliveira2311@gmail.com> 1794929156 -0300	commit: Adicione marcações explicativas para a apresentação do projeto
+70e4c457c9f3d2405cf5429b443d33e420044c9c 3c1a6402b12c682fa21d6b6283322bb4ed3c0e1c Felipe Santos <felipe.soliveira2311@gmail.com> 1794964352 -0300	commit: Corrige caminhos das imagens do blog
+3c1a6402b12c682fa21d6b6283322bb4ed3c0e1c 95823b1ec7f2cf5c4cf1556202cd1a584c323e4e Felipe Santos <felipe.soliveira2311@gmail.com> 1794964752 -0300	commit: Atualiza marca na página de benefícios
+95823b1ec7f2cf5c4cf1556202cd1a584c323e4e fdc1d424a95bf1aa2e095c230c3f68ac8ab74f4f Felipe Santos <felipe.soliveira2311@gmail.com> 1794966942 -0300	commit: Ajuste de gramática, correção de cor preto profundo, adicionado logo ao menu, correção footer sem nome da empresa.

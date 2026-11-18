@@ -1,0 +1,611 @@
+:root{
+    --fundo: #f8fbf9;
+    --icone_fundo:#e9f3ec;
+    --paragrafo:#737f8b;
+    --borda: #c4c4c46d;
+    --hovergreen: rgb(1, 100, 1);
+}
+
+*{
+        padding:0;
+        margin:0;
+        box-sizing: border-box;
+    }
+
+    #icone_sidebar{
+        display:none;
+    }
+
+    html{
+       scroll-behavior: smooth;
+       font-size:16px;
+    }
+
+    .espacamento{   
+       margin-inline:clamp(20px, calc(13vw - 50px), 200px);
+        padding:clamp(10px,100vh, 30px) 0px;
+    }
+
+    
+    
+
+    body {
+        background-color: #ffffff00;
+        font-family: Arial, Helvetica, sans-serif;
+
+    } 
+    
+    main{
+        background-color:var(--fundo);
+    }
+
+    a{
+        text-decoration: none;
+        color:inherit;
+    }
+
+    button{
+        cursor: pointer;
+    }
+
+    /* CONFIGURAÇÃO BANNER */
+
+    .span-topo{
+        color:green;
+        font-size:clamp(0.7rem, 4vw, 0.8rem);
+        letter-spacing:2px;
+        font-weight: 600;
+    }
+
+    span{
+        color:green;
+    }
+
+    h1{
+        font-size: clamp(2.5rem, 6vw, 4rem);   
+        letter-spacing:-0.06em;
+    }
+
+    p{
+        font-size:clamp(0.9rem, 4vw, 1rem);
+        color:var(--paragrafo);
+        line-height: 1.5;
+        max-width:500px;
+        margin-bottom:30px;
+    }
+
+    #banner_principal{
+        display:flex;
+        min-height:380px;
+        border-bottom:5px solid green;
+        display:flex;
+        align-items:center;
+
+        background-image: linear-gradient( to right, white 40%, transparent 70%), url('/hydrotime-/src/assets/imagens/imagem%20formulario.png');
+        background-position: left;
+    }
+
+    #conteudo_banner_principal{
+        max-width:800px;
+        display:grid;
+        grid-template-rows:  repeat(3 ,auto);
+        row-gap: 15px;
+     
+    }
+
+    /* CARDS BANNER */
+
+    .cards_banner{
+        margin-top:35px;
+        
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+        justify-content: center;
+        gap:50px;
+    }
+
+    .corpo_card_banner{
+        display:flex;
+        align-items:center;
+        gap:10px;
+        
+    }
+
+    .corpo_card_banner img{
+        width:30px;
+    }
+    /* FIM CONFIGURAÇÃO BANNER */
+
+    /* ===== FORMULARIO ===== */
+
+    #formulario{
+        display:flex;
+        gap:50px;
+        flex-wrap: wrap;
+    }
+
+    /* Cards */
+
+    .cards_contato{
+        flex:1;
+    }
+
+    h2{
+        font-size:clamp(1.6rem,6vw,2.5rem);
+        padding:15px 0px;
+        letter-spacing: -0.04em;
+    }
+
+    b{
+        font-size:clamp(0.8rem, 4vw, 0.8rem);
+        color:green;
+    }
+
+    strong{
+        font-size:clamp(0.9rem, 4vw, 0.9rem);
+    }
+
+    small{
+        font-size:clamp(0.8rem, 4vw, 0.8rem);
+        color:#666666b0;
+    }
+
+    .conteiner_cards{
+        display:grid;
+
+        max-width: 100%;
+        gap:20px;
+    }
+
+    .corpo_card{
+        display:flex;
+        align-items: center;
+
+
+        outline:1px solid var(--borda);
+        border-radius:15px;
+
+        min-height:6em;
+        background-color:white;
+    }
+    .img_card {
+        min-width:60px;
+        min-height:60px;  
+  
+        border-radius:50px;
+        background-color:var(--icone_fundo);
+        
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        margin-left:10px;
+    }
+
+    .conteiner_cards article:nth-child(4){
+        outline:none;
+    }
+    
+    .conteudo_card{
+        display:flex;
+        padding:20px;
+
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .redes_card{
+        display:flex;
+        gap:10px;
+        margin-left:20px;
+
+    }
+
+    .redes_card img{
+        width:30px;
+    }
+
+
+    /* Preenchimento */
+
+    #preenchimento{
+        flex:1;
+        min-width:50%;
+        background-color:white;
+        
+        padding:40px;
+        border-radius:20px;
+        outline:1px solid var(--borda);
+
+    }
+
+    #preenchimento h2{
+        font-size:clamp(1.5rem, 4vw, 2.2rem);
+    }
+
+    label{
+        outline:1px solid var(--borda);
+        padding:15px;
+        border-radius:10px;
+        display:flex;
+        display:flex;
+        align-items: start;
+
+        background-color:white;
+
+    }
+
+    label:focus-within{
+        outline:3px solid rgba(0, 128, 0, 0.227);
+
+    }
+
+    label img{
+        margin-right:20px;
+    }
+
+    input{
+        border:none;
+        display:flex;
+        color:#666;
+    }
+
+     select{
+        width:100%;
+        border:none;
+        color:#666;
+     }
+
+    input:focus,select:focus{
+        outline:none;
+    }
+
+    select:hover{
+        cursor:pointer;
+    }
+
+
+    #preenchimento form{
+        display:flex;
+        flex-direction: column;
+        gap:20px;
+    }
+
+     
+
+    #preenchimento_contato{
+        display:flex;
+        gap:20px;
+      
+    }
+
+    #preenchimento_contato label{
+        width:600px;
+        list-style: none;
+    }
+
+    #descreva{
+        border:none;
+        min-height:100px;
+        width:100%;   
+
+        font-family:Arial, Helvetica, sans-serif;
+    }
+
+     #checkbox{
+      display: flex;
+      gap:10px;
+    }
+
+    #checkbox input{
+        display:flex;
+        
+    }
+
+    #checkbox a{
+        text-decoration: underline;
+        color:green;
+    }
+
+    #btn_enviar{
+        padding:15px 50px; 
+        border-radius:5px;
+        border:none;
+        background-color: green;
+        color:white;
+        font-size:0.9rem;
+
+        width:100%;
+    }
+
+    #btn_enviar:hover{
+        transform: translateY(2px);
+        box-shadow:0 4px 12px #00000026;
+        background-color: var(--hovergreen) ;
+        transition:.3s;
+    }
+
+    /* ===== LOCALIZACAO ===== */
+
+
+    #localizacao{
+        display:flex;
+        flex-wrap: wrap;
+        gap:20px;
+
+    }
+
+    #localizacao div:nth-child(1){
+        flex:1;
+    }
+
+    #localizacao div header{
+        display:flex;
+        align-items: start;
+        gap:20px;
+    }
+
+    #preenchimento_cep{
+        background-color: white;
+        padding:30px;
+        flex:1;
+        outline:1px solid var(--borda);
+        border-radius:10px;
+    }
+
+    .buscar_cep{
+         display:flex;
+        flex-direction: column;
+        gap:20px;
+
+        outline:1px solid var(--borda);
+        padding:20px;
+        border-radius:10px;
+        min-width:50%;
+        flex:1;
+        
+        background-color: white;
+    }
+
+    .icone_cep{
+        min-width: 80px;
+        max-width:80px;
+        min-height:80px;
+
+        border-radius:60px;
+        background:var(--icone_fundo);
+
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+     .icone_cep img{
+        width:40px;
+    }
+
+    /* Campo cep e botão buscar */
+    .buscar_cep div:nth-child(1){
+        display:flex;
+        justify-content:space-between;
+
+        gap:20px;
+    }
+
+    .buscar_cep label{
+        display:none;
+
+    }   
+
+    #cep{
+        flex:2;
+    }
+
+    /* Esconde botão buscar CEP média */
+    #btn_cep_media{
+        display:none;
+    }
+    /* ========================== */
+
+    #btn_cep{
+        flex:1;
+        
+        
+        border:none;
+        font-size:1rem;
+        border-radius:10px;
+        color:white;
+        background-color:green;
+    }
+
+    /* Resultado da busca */
+    .buscar_cep div:nth-child(2){
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        gap:10px;
+    }
+
+    .buscar_cep div input{
+        padding:15px;
+        outline:1px solid var(--borda);
+        border-radius:10px;
+    }
+
+    /* ===== FAQ ===== */
+
+    #faq{
+        display:flex;
+        gap:60px;
+        flex-wrap: wrap;
+    }
+
+    .img_faq{
+        flex:1;
+    }
+    
+    .img_faq img{
+        width:clamp(250px, 40vw, 500px);
+        height:clamp(200px, 70vh, 400px);
+        border-radius:10px;
+    }
+
+    .conteiner_faq{
+        flex:1;
+        display:flex;
+        flex-direction: column;
+        gap:8px;
+
+        min-width:40%;
+    }
+
+    details{
+        
+        outline:1px solid var(--borda);
+        background-color:white;
+        border-radius:10px;
+    }
+
+    summary{  
+        padding:5px;
+        font-size:clamp(0.8rem, 0.8vw, 0.9rem);
+        border-radius: 10px;
+        padding:10px;
+        width:100%;
+        display:flex;
+        justify-content: space-between;
+        list-style: none;
+
+        display:flex;
+    }
+
+    details p{
+        background-color: white;
+    }
+
+
+    summary::after{
+        content:'+';
+        font-weight: 600;
+        font-size:18px;
+        color:#666;
+
+    }
+
+    details[open] summary::after{
+        content:'-';
+    }
+
+    details[open] p{
+        border-radius:10px;
+        font-size:0.8rem;
+        margin-left:10px;
+        max-width:100%;
+        min-height:0px;
+        height:auto;
+        border-radius:10px;
+            
+    }
+
+
+    summary:hover{
+        cursor:pointer;
+    }
+
+    #recebido{
+        position:relative;
+    }
+
+    #recebido div:nth-child(1){
+        width:600px;
+        height:300px;
+
+        border-radius:15px;
+        box-shadow:0 4px 12px var(--borda);
+        background-color:var(--fundo);
+        
+        display:flex;  
+        align-items:center;
+        flex-direction: column;
+        justify-content: center;
+        gap:50px;
+    }
+
+    #ok{
+        width:50px;
+    }
+    
+
+    #fechar img{
+        position:absolute;
+        width:30px;
+        right:10px; 
+        top:10px;
+    }
+
+    .fundo-modal-form{
+        display:none;
+        position:fixed;
+        inset:0;
+        background-color: #00000080;
+        z-index:1;
+    }
+
+    .modalForm{
+        position:fixed;
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%);
+        z-index:2;
+    }
+
+
+@media (max-width: 700px){
+
+    #checkbox{
+        font-size:13px;
+    }
+
+    .img_faq img{
+        width:clamp(300px, 90vw, 1200px);
+        height:clamp(300px, 30vw, 1080px)
+
+    }
+
+    .cards_banner{
+        display:none;
+    }
+
+    #preenchimento_contato{
+        flex-direction: column;
+    }
+
+    #preenchimento_contato label{
+        max-width:100%;
+    }
+
+    .buscar_cep div:nth-child(2){
+        grid-template-columns: repeat(1,1fr);
+    }
+
+    #recebido div:nth-child(1){
+        width:350px;
+        height:300px;
+        padding:60px;
+    }
+}
+
+@media(max-width:450px){
+
+    
+    #btn_cep{
+       display:none;
+    }
+
+     #btn_cep_media{
+        display:block;
+        background-color:white;
+        border:none;
+    }
+}
+

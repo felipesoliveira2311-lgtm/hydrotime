@@ -1,0 +1,67 @@
+
+/* Conteiner card */
+#cardIcone{
+    display:flex;
+    gap:20px;
+}
+
+/* corpo card */
+#cardIcone article{
+    flex:1;
+}
+
+/* header card */
+.header_cardIcone{
+    display:flex;
+    align-items: center;
+    gap:10px;
+}
+
+/* borda do icone */
+.borda_icone{
+    min-width:clamp(50px,10vw,60px);
+    min-height:clamp(50px,10vw,60px);
+    border-radius:40px;
+    box-shadow: 0 4px 12px var(--borda);
+    
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* imagem do icone */
+.header_cardIcone img{
+    width:clamp(25px,10vw,30px);
+}
+
+/* linha do card */
+.proximo{
+    outline:1px solid var(--borda);
+    max-height:0px;
+    width:90%;
+}
+
+/* conteudo card */
+
+.conteudo_icone{
+    padding:20px;
+    line-height:1.6;
+    margin-bottom:auto;
+}
+
+.passo{
+    font-weight: 600;
+    color:var(--principal);
+    margin-bottom:0px;
+    
+}
+
+@media(max-width:800px){
+    #cardIcone{
+        flex-direction: column;
+    }
+}
+
+
+
+

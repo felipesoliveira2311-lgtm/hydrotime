@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- MENU -->
+    <script src="./src/componentes/menu/menu.js?v=6d2f636" defer></script>
+
+    <!-- BANNER PRINCIPAL -->
+    <script src="./src/componentes/banner/bannerTop/banner_top.js?v=2dd4a66" defer></script>
+
+    <!-- TITULO DE SEÇÃO -->
+    <script src="./src/componentes/texto/mainHeader/mainHeader.js?v=2dd4a66" defer></script>
+
+    <!-- CARDS SETORES -->
+    <script src="./src/componentes/cards/cardImagem/cardimg.js?v=2dd4a66" defer></script>
+
+    <!-- CARDS COMO FUNCIONA -->
+    <script src="./src/componentes/cards/cardPassos/cardicone.js?v=2dd4a66" defer></script>
+
+    <!-- BANNER COM CARROSSEL -->
+    <script src="./src/componentes/banner/bannerCard/bannerCard.js?v=2dd4a66" defer></script>
+
+    <!-- BANNER FOOTER -->
+    <script src="./src/componentes/banner/bannerMain/bannerMain.js?v=2dd4a66" defer></script>
+
+    <!-- TERMOS -->
+    <script src="./src/componentes/termos/termos.js?v=2dd4a66" defer></script>
+
+    <!-- FOOTER -->
+    <script src="./src/componentes/footer/footer.js?v=2dd4a66" defer></script>
+
+    <!-- ESTILO TITULO DE SEÇÃO -->
+    <link rel="stylesheet" href="./src/componentes/texto/mainHeader/headerMain.css?v=2dd4a66">
+
+    <!-- ESTILO CARDS PAÁGINA PRINCIPAL -->
+    <link rel="stylesheet" href="./src/componentes/cards/cardImagem/cardFlutuante.css?v=2dd4a66">
+
+    <!-- ESTILO CARDS COMO FUNCIONA -->
+    <link rel="stylesheet" href="./src/componentes/cards/cardPassos/cardIconePassos.css?v=2dd4a66">
+
+    <!-- ESTILO DA SEÇÃO DE SOLUÇÕES  -->
+    <link rel="stylesheet" href="./src/componentes/banner/bannerCard/bannerCard.css?v=6d2f636">
+
+    <!-- ESTILO DO BANNER DE CONTATO AO FINAL DA PÁGINA -->
+    <link rel="stylesheet" href="./src/componentes/banner/bannerMain/bannerMain.css?v=2dd4a66">
+
+    <!-- ESTILO DE CSS GLOBAL -->
+    <link rel="stylesheet" href="./src/styles/style.css?v=2dd4a66">
+
+    <!-- ESTILO DE CSS DE RESPONSIVIDADE GLOBAL -->
+    <link rel="stylesheet" href="./src/styles/responsividade.css?v=2dd4a66">
+
+    <!-- ESTILO DE CORES GLOBAL -->
+    <link rel="stylesheet" href="./src/styles/root.css?v=2dd4a66">
+
+    <!-- ESTILO DA PÁGINA HTML -->
+    <link rel="stylesheet" href="./src/paginas/home/home.css?v=2dd4a66">
+
+    <title>Pagina Inicial</title>
+</head>
+
+<body>
+
+    <!-- CHAMADA DO COMPONENTE MENU -->
+    <div id="menu"></div>
+
+    <!-- BANNER PRINCIPAL -->
+    <div id="conteiner_banner">
+
+        <div class="banner">
+            <!-- CHAMADA DO COMPONENTE BANNERTOP -->
+            <div id="banner_top" class="home"></div>
+
+            <section id="btn_banner_principal">
+                <a id="btn_solucao" href="./src/paginas/solucoes/solucoes.html">
+                    Conheça a solução
+                </a>
+
+                <a id="btn_como_funciona" href="#conteiner_banner_comoFunciona">
+                    Ver como funciona
+                </a>
+            </section>
+
+            <!-- card beneficios -->
+            <section id="beneficio_home">
+                <div><img src="./src/assets/icones/leaf.svg">Plantas mais saudáveis</div>
+                <div><img src="./src/assets/icones/recycle.svg">Menos desperdicio</div>
+                <div><img src="./src/assets/icones/grafico.svg">Mais produtividade.</div>
+            </section>
+        </div>
+
+        <div></div>
+
+    </div>
+
+    <main>
+        <!-- SETORES -->
+        <section id="setores" class="home">
+
+            <!-- CHAMADA DO COMPONENTE MAINHEADER -->
+            <div id="mainHeader" class="home espacamento"></div>
+
+            <!-- CHAMADA DO COMPONENTE CARDIMG -->
+            <div id="cardImg" class="home espacamento"></div>
+
+        </section>
+
+        <!-- COMO FUNCIONA -->
+        <section id="comoFuniona">
+            <div id="conteiner_banner_comoFunciona" class="">
+                <div id="banner_top_comoFunciona" class="espacamento"></div>
+            </div>
+
+            <!-- CHAMADA DO COMPONENTE CARDICONE -->
+            <div id="cardIcone" class="espacamento comoFunciona"></div>
+
+        </section>
+
+        <!-- SISTEMA -->
+        <section id="sistema" class="home espacamento">
+
+            <div id="header_sistema" class="home">
+                <div>
+                    <div id="mainHeader" class="sistema"></div>
+
+                    <div class="dados_sistema">
+                        <img src="./src/assets/icones/umidade.svg">
+                        Umidade do solo e do ar.
+                    </div>
+
+                    <div class="dados_sistema">
+                        <img src="./src/assets/icones/thermometer-sun.svg">
+                        Temperatura.
+                    </div>
+
+                    <div class="dados_sistema">
+                        <img src="./src/assets/icones/lumoinosidade.svg">
+                        Luminosidade.
+                    </div>
+
+                    <div class="dados_sistema">
+                        <img src="./src/assets/icones/saude.svg">
+                        Saúde da planta.
+                    </div>
+
+                    <div class="dados_sistema">
+                        <img src="./src/assets/icones/relatorio.svg">
+                        Alertas e recomendações.
+                    </div>
+                </div>
+
+                <div id="tela_app">
+                    <img src="./src/assets/imagens/sistema.png">
+                </div>
+            </div>
+
+        </section>
+
+        <!-- SOLUÇÕES -->
+
+         <!-- CHAMADA DO COMPONENTE BANNERCARD -->
+        <section id="bannerCard" class="home espacamento"></section>
+
+        <!-- BANNER MAIN -->
+        <section class="espacamento">
+
+            <!-- CHAMADA DO COMPONENTE BANNERMAIN -->
+            <div id="banner_main" class="home"></div>
+
+        </section>
+    </main>
+
+    <!-- CHAMADA DO COMPONENTE FOOTER -->
+    <div id="footer"></div>
+
+</body>
+
+</html>

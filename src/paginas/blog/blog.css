@@ -1,0 +1,861 @@
+a{
+    color:black;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f7f2;
+    color: #263528;
+    margin: 0;
+}
+
+/* CONFIGURAÇÕES GERAIS */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f7f2;
+    color: #263528;
+    margin: 0;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 24px;
+}
+
+.blog-hero {
+    min-height: 320px;
+    padding: 50px 40px;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(90deg, rgba(5, 35, 25, .84) 0%, rgba(5, 35, 25, .58) 48%, rgba(5, 35, 25, .08) 100%), url("assets_site_iot_separados/imagens/banner-hydrotime.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 18px;
+    background-color: #eaf2e8;
+}
+
+.blog-hero-conteudo {
+    max-width: 550px;
+}
+
+.blog-destaque {
+    color: #c5e8ce;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.blog-hero h1 {
+    color: #ffffff;
+    font-size: 42px;
+    line-height: 1.15;
+    margin: 20px 0;
+}
+
+.blog-descricao {
+    color: #edf5ef;
+    line-height: 1.6;
+}
+
+.blog-categorias {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 28px 0;
+
+}
+
+.categoria {
+    padding: 12px 22px;
+    border: 1px solid #dce5d9;
+    border-radius: 30px;
+    background-color: #ffffff;
+    color: #263528;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.categoria.ativa {
+    background-color: #07552f;
+    color: #ffffff;
+    border-color: #07552f;
+}
+
+.blog-artigos {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+.artigo-card {
+    background-color: #ffffff;
+    border: 1px solid #e6ece3;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(38, 53, 40, 0.06);
+}
+
+.artigo-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+.artigo-conteudo {
+    padding: 20px;
+}
+
+.artigo-categoria {
+    display: inline-block;
+    color: #39754a;
+    background-color: #edf5eb;
+    border-radius: 20px;
+    padding: 6px 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.artigo-card h2 {
+    font-size: 19px;
+    line-height: 1.4;
+    margin: 14px 0 10px;
+}
+
+.artigo-card p {
+    color: #667166;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.artigo-card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #07552f;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .blog-artigos {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 520px) {
+    .blog-artigos {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ===== ABAS (Blog | Sobre nós | Integrantes) ===== */
+
+.abas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #dce5d9;
+}
+
+.aba {
+    padding: 12px 22px;
+    border: none;
+    border-bottom: 3px solid transparent;
+    background: none;
+    color: #667166;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.aba:hover {
+    color: #07552f;
+}
+
+.aba.ativa {
+    color: #07552f;
+    border-bottom-color: #07552f;
+}
+
+.aba:focus-visible,
+.categoria:focus-visible {
+    outline: 3px solid #52765a;
+    outline-offset: 2px;
+}
+
+.painel {
+    display: none;
+}
+
+.painel.ativo {
+    display: block;
+}
+
+
+/* ===== SOBRE NÓS ===== */
+
+.sobre {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.sobre-imagem {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 18px;
+    background-color: #eaf2e8;
+    display: block;
+}
+
+.sobre-texto h1 {
+    font-size: 36px;
+    line-height: 1.15;
+    margin: 0 0 18px;
+}
+
+.sobre-texto p {
+    color: #667166;
+    line-height: 1.7;
+    margin: 0 0 14px;
+}
+
+.sobre-aviso {
+    font-size: 13px;
+    color: #667166;
+    margin-top: 10px;
+}
+
+
+/* ===== INTEGRANTES ===== */
+
+.integrantes-titulo {
+    font-size: 36px;
+    margin: 0 0 10px;
+}
+
+.integrantes-intro {
+    color: #667166;
+    line-height: 1.6;
+    max-width: 640px;
+    margin: 0 0 28px;
+}
+
+.integrantes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    margin-bottom: 40px;
+}
+
+.integrante-card {
+    background-color: #ffffff;
+    border: 1px solid #e6ece3;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(38, 53, 40, 0.06);
+    padding: 28px 20px;
+    text-align: center;
+}
+
+/* Avatar: mostra a imagem; se ela não existir, aparecem as iniciais */
+.avatar {
+    position: relative;
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 16px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #d5e3d0;
+    color: #07552f;
+    font-size: 28px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.avatar img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.integrante-card h3 {
+    font-size: 18px;
+    margin: 0 0 6px;
+}
+
+.integrante-card p {
+    color: #667166;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+
+/* ===== RESPONSIVO (abas) ===== */
+
+@media (max-width: 768px) {
+    .sobre {
+        grid-template-columns: 1fr;
+    }
+
+    .integrantes-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 520px) {
+    .integrantes-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .sobre-imagem {
+        height: 260px;
+    }
+
+    .sobre-texto h1,
+    .integrantes-titulo {
+        font-size: 28px;
+    }
+}
+
+
+/* ===== MELHORIAS DO BLOG HYDROTIME ===== */
+.blog-hero {
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+}
+.blog-hero-conteudo { position: relative; z-index: 1; }
+.blog-destaque { color: #07552f; }
+.blog-hero h1 { max-width: 560px; color: #203b2a; }
+.blog-descricao { max-width: 520px; }
+.artigo-card {
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.artigo-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(38, 53, 40, 0.11);
+}
+.artigo-conteudo { display: flex; flex-direction: column; flex: 1; }
+.artigo-conteudo details { margin-top: auto; padding-top: 12px; }
+.artigo-conteudo summary {
+    color: #07552f;
+    font-weight: bold;
+    cursor: pointer;
+    list-style: none;
+    display: inline-block;
+}
+.artigo-conteudo summary::-webkit-details-marker { display: none; }
+.artigo-conteudo summary::after { content: "  +"; }
+.artigo-conteudo details[open] summary::after { content: "  −"; }
+.artigo-conteudo details p { margin-top: 12px; }
+.artigo-card[hidden] { display: none; }
+.categoria { transition: background-color 0.2s ease, border-color 0.2s ease; }
+.categoria:hover { border-color: #07552f; }
+
+
+/* Ajustes visuais do blog HydroTime */
+.blog-hero {
+    position: relative;
+    min-height: 350px;
+    background-position: center 48%;
+    box-shadow: 0 14px 34px rgba(14, 54, 35, .12);
+}
+.artigo-card {
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+.artigo-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(14, 54, 35, .13);
+}
+.artigo-card img {
+    height: 205px;
+}
+.artigo-card details {
+    margin-top: 12px;
+    color: #07552f;
+    font-size: 14px;
+}
+.artigo-card summary {
+    cursor: pointer;
+    font-weight: 700;
+    list-style-position: inside;
+}
+.artigo-card details p {
+    margin-top: 10px;
+}
+.artigo-card[hidden] { display: none; }
+
+
+
+/* MELHORIA DE CONTRASTE DO BANNER HYDROTIME */
+
+.blog-hero {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+/* Camada escura para destacar os textos */
+.blog-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        90deg,
+        rgba(0, 35, 22, 0.88) 0%,
+        rgba(0, 45, 28, 0.65) 48%,
+        rgba(0, 0, 0, 0.05) 100%
+    );
+    z-index: -1;
+}
+
+/* Conteúdo do banner */
+.blog-hero-conteudo {
+    position: relative;
+    z-index: 1;
+}
+
+/* Pequeno título */
+.blog-destaque {
+    color: #B8F28B;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+/* Título principal */
+.blog-hero h1 {
+    color: #FFFFFF;
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 1.2;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+/* Descrição */
+.blog-descricao {
+    color: #FFFFFF;
+    font-size: 17px;
+    line-height: 1.7;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.35);
+}
+
+
+/* SOBRE NÓS — identidade visual HydroTime */
+.sobre-pagina { display:flex; flex-direction:column; gap:54px; padding-bottom:28px; }
+.sobre-hero { display:grid; grid-template-columns:.9fr 1.1fr; align-items:center; gap:34px; padding:34px; border:1px solid #e2ebe0; border-radius:22px; background:linear-gradient(135deg,#edf5eb 0%,#f8faf6 58%,#e6f0e4 100%); overflow:hidden; }
+.sobre-hero-texto { max-width:480px; }
+.sobre-eyebrow { display:inline-block; margin-bottom:13px; color:#39754a; font-size:11px; font-weight:800; letter-spacing:2px; line-height:1.5; }
+.sobre-hero-texto h1 { margin:0 0 16px; color:#203b2a; font-size:clamp(34px,4vw,48px); line-height:1.08; }
+.sobre-hero-texto h1 span { color:#267448; }
+.sobre-hero-texto p,.sobre-introducao-texto p { margin:0; color:#5d6d60; font-size:16px; line-height:1.8; }
+.sobre-imagem { width:100%; height:330px; margin:0; border-radius:16px; object-fit:cover; box-shadow:0 12px 28px rgba(24,65,39,.12); }
+.sobre-introducao { display:grid; grid-template-columns:.85fr 1.15fr; gap:48px; align-items:start; padding:0 12px; }
+.sobre-introducao h2,.sobre-secao-cabecalho h2 { max-width:470px; margin:0; color:#203b2a; font-size:clamp(26px,3vw,34px); line-height:1.2; }
+.sobre-introducao-texto { display:grid; gap:16px; }
+.sobre-proposito { padding:38px; border-radius:20px; background:radial-gradient(circle at 90% 10%,rgba(145,205,122,.2),transparent 32%),#0b4930; color:#fff; }
+.sobre-proposito .sobre-eyebrow,.sobre-final .sobre-eyebrow { color:#b8e69a; }
+.sobre-proposito h2 { margin:0 0 14px; color:#fff; font-size:clamp(27px,3vw,38px); line-height:1.2; }
+.sobre-proposito p { max-width:700px; margin:0; color:#e1eee5; font-size:16px; line-height:1.8; }
+.sobre-pilares { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:18px; }
+.sobre-pilar { padding:26px 24px; border:1px solid #e2ebe0; border-radius:17px; background:#fff; box-shadow:0 5px 18px rgba(38,53,40,.045); }
+.sobre-pilar-icone { display:inline-flex; width:44px; height:44px; align-items:center; justify-content:center; margin-bottom:18px; border-radius:13px; background:#eaf4e8; color:#17623b; font-size:27px; font-weight:700; }
+.sobre-pilar h3,.sobre-etapa h3 { margin:0 0 9px; color:#203b2a; font-size:19px; }
+.sobre-pilar p,.sobre-etapa p { margin:0; color:#667166; font-size:14px; line-height:1.7; }
+.sobre-secao-cabecalho { margin-bottom:24px; text-align:center; }
+.sobre-secao-cabecalho h2 { max-width:none; }
+.sobre-secao-cabecalho>p { margin:12px 0 0; color:#667166; line-height:1.6; }
+.sobre-etapas { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:20px; }
+.sobre-etapa { overflow:hidden; border:1px solid #e6ece3; border-radius:17px; background:#fff; box-shadow:0 5px 18px rgba(38,53,40,.05); }
+.sobre-etapa img { display:block; width:100%; height:175px; object-fit:cover; }
+.sobre-etapa-numero { display:inline-block; margin:18px 20px 8px; color:#39754a; font-size:12px; font-weight:800; letter-spacing:1.5px; }
+.sobre-etapa h3,.sobre-etapa p { margin-right:20px; margin-left:20px; }
+.sobre-etapa p { margin-bottom:22px; }
+.sobre-final { display:flex; align-items:center; justify-content:space-between; gap:24px; padding:30px 34px; border-radius:20px; background:linear-gradient(120deg,#123f2b,#17623b); color:#fff; }
+.sobre-final h2 { max-width:620px; margin:0 0 9px; color:#fff; font-size:clamp(24px,3vw,32px); line-height:1.2; }
+.sobre-final p { margin:0; color:#e0eee4; line-height:1.6; }
+.sobre-botao-equipe { flex:0 0 auto; padding:13px 19px; border:0; border-radius:30px; background:#fff; color:#07552f; font-size:14px; font-weight:700; cursor:pointer; transition:transform .2s ease,background .2s ease; }
+.sobre-botao-equipe:hover { transform:translateY(-2px); background:#eaf4e8; }
+.sobre-pagina .sobre-aviso { margin:-30px 0 0; color:#7b877c; font-size:12px; line-height:1.5; }
+@media(max-width:800px) {
+ .sobre-hero,.sobre-introducao { grid-template-columns:1fr; }
+ .sobre-hero { padding:24px; }
+ .sobre-imagem { height:280px; }
+ .sobre-introducao { gap:18px; }
+ .sobre-pilares,.sobre-etapas { grid-template-columns:1fr 1fr; }
+ .sobre-final { align-items:flex-start; flex-direction:column; }
+}
+@media(max-width:520px) {
+ .sobre-pagina { gap:36px; }
+ .sobre-hero { padding:20px; }
+ .sobre-imagem { height:220px; }
+ .sobre-pilares,.sobre-etapas { grid-template-columns:1fr; }
+ .sobre-proposito,.sobre-final { padding:25px 22px; }
+}
+
+
+
+/* ===== NOVO VISUAL DA EQUIPE HYDROTIME ===== */
+#painel-integrantes .equipe-pagina {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    padding-bottom: 12px;
+}
+
+#painel-integrantes .equipe-hero {
+    position: relative;
+    isolation: isolate;
+    display: flex;
+    align-items: center;
+    min-height: 295px;
+    overflow: hidden;
+    padding: 34px 42px;
+    border-radius: 22px;
+    color: #fff;
+    background:
+        linear-gradient(105deg, rgba(4, 52, 34, .98) 0%, rgba(8, 75, 47, .96) 54%, rgba(15, 91, 54, .76) 100%),
+        url("assets_site_iot_separados/imagens/banner-hydrotime.png") center/cover;
+    box-shadow: 0 14px 34px rgba(14, 54, 35, .12);
+}
+
+#painel-integrantes .equipe-hero-conteudo {
+    position: relative;
+    z-index: 2;
+    max-width: 610px;
+}
+
+#painel-integrantes .equipe-selo {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    margin-bottom: 14px;
+    padding: 8px 14px;
+    border: 1px solid rgba(224, 246, 222, .35);
+    border-radius: 30px;
+    background: rgba(220, 244, 216, .16);
+    color: #e2f5d9;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+}
+
+#painel-integrantes .equipe-selo span { font-size: 17px; }
+
+#painel-integrantes .equipe-hero h1 {
+    margin: 0 0 13px;
+    color: #fff;
+    font-size: clamp(34px, 4vw, 48px);
+    line-height: 1.08;
+}
+
+#painel-integrantes .equipe-hero p {
+    max-width: 550px;
+    margin: 0;
+    color: #e3efe6;
+    font-size: 16px;
+    line-height: 1.65;
+}
+
+#painel-integrantes .equipe-pilares {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    margin-top: 25px;
+}
+
+#painel-integrantes .equipe-pilares span {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    padding: 3px 20px;
+    border-right: 1px solid rgba(220, 242, 222, .45);
+    color: #f0f7ef;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+#painel-integrantes .equipe-pilares span:first-child { padding-left: 0; }
+#painel-integrantes .equipe-pilares span:last-child { border-right: 0; }
+#painel-integrantes .equipe-pilares b { color: #bce69c; font-size: 22px; }
+
+#painel-integrantes .equipe-hero-grafismo {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    width: 38%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+#painel-integrantes .grafismo-circulo {
+    position: absolute;
+    display: block;
+    border: 1px solid rgba(211, 239, 196, .22);
+    border-radius: 50%;
+}
+
+#painel-integrantes .circulo-um {
+    width: 330px;
+    height: 330px;
+    top: -115px;
+    right: -45px;
+    box-shadow: 0 0 0 28px rgba(211, 239, 196, .035), 0 0 0 58px rgba(211, 239, 196, .025);
+}
+
+#painel-integrantes .circulo-dois {
+    width: 210px;
+    height: 210px;
+    right: 100px;
+    bottom: -135px;
+    background: rgba(178, 220, 153, .08);
+}
+
+#painel-integrantes .grafismo-folha {
+    position: absolute;
+    right: 105px;
+    bottom: 25px;
+    color: rgba(216, 242, 197, .42);
+    font-size: 112px;
+    transform: rotate(-25deg);
+}
+
+#painel-integrantes .grafismo-sinal {
+    position: absolute;
+    top: 45px;
+    right: 70px;
+    color: rgba(216, 242, 197, .42);
+    font-size: 70px;
+    transform: rotate(90deg);
+}
+
+#painel-integrantes .integrantes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    margin: 0 0 10px;
+}
+
+#painel-integrantes .integrante-card {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    min-width: 0;
+    min-height: 178px;
+    padding: 20px 17px;
+    overflow: hidden;
+    border: 1px solid #e2ebe0;
+    border-radius: 20px;
+    background: linear-gradient(145deg, #fff 0%, #f8fbf6 78%, #edf6e9 100%);
+    box-shadow: 0 5px 16px rgba(25, 66, 39, .07);
+    text-align: left;
+    transition: transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+}
+
+#painel-integrantes .integrante-card::after {
+    content: "";
+    position: absolute;
+    right: -35px;
+    bottom: -65px;
+    width: 150px;
+    height: 100px;
+    border-radius: 50%;
+    background: rgba(187, 222, 174, .16);
+    transform: rotate(-18deg);
+    pointer-events: none;
+}
+
+#painel-integrantes .integrante-card:hover {
+    transform: translateY(-5px);
+    border-color: #c8dfc2;
+    box-shadow: 0 13px 26px rgba(25, 66, 39, .12);
+}
+
+#painel-integrantes .avatar {
+    position: relative;
+    flex: 0 0 108px;
+    width: 108px;
+    height: 108px;
+    margin: 0;
+    border: 4px solid #e2f0dc;
+    outline: 2px solid #8dbb83;
+    border-radius: 50%;
+    background: #d5e8d0;
+    color: #07552f;
+    font-size: 28px;
+    box-shadow: 0 3px 10px rgba(14, 75, 42, .12);
+}
+
+#painel-integrantes .avatar span {
+    position: relative;
+    z-index: 0;
+}
+
+#painel-integrantes .avatar img {
+    z-index: 1;
+    border-radius: 50%;
+}
+
+#painel-integrantes .integrante-info {
+    position: relative;
+    z-index: 1;
+    flex: 1;
+    min-width: 0;
+}
+
+#painel-integrantes .integrante-card h3 {
+    margin: 0 0 8px;
+    color: #123f2b;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+#painel-integrantes .integrante-card .integrante-funcao {
+    display: inline-block;
+    max-width: 100%;
+    margin: 0;
+    padding: 7px 10px;
+    border-radius: 12px;
+    background: #e3f0df;
+    color: #245638;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+#painel-integrantes .integrante-icone {
+    position: absolute;
+    z-index: 1;
+    top: 12px;
+    right: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: #edf5e9;
+    color: #17623b;
+    font-size: 21px;
+    font-weight: 700;
+}
+
+#painel-integrantes .equipe-final {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    min-height: 112px;
+    padding: 23px 34px;
+    overflow: hidden;
+    border-radius: 22px;
+    background:
+        radial-gradient(ellipse at 100% 130%, rgba(113, 178, 111, .35) 0 22%, transparent 22.5%),
+        linear-gradient(110deg, #e4f1df 0%, #f0f7ed 70%, #e1efdc 100%);
+}
+
+#painel-integrantes .equipe-final-icone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 80px;
+    min-height: 68px;
+    border-right: 2px solid #39754a;
+    color: #397c4a;
+    font-size: 55px;
+}
+
+#painel-integrantes .equipe-final h2 {
+    margin: 0 0 7px;
+    color: #123f2b;
+    font-size: clamp(21px, 2.4vw, 29px);
+    line-height: 1.2;
+}
+
+#painel-integrantes .equipe-final p {
+    margin: 0;
+    color: #3d5d47;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+@media (max-width: 1050px) {
+    #painel-integrantes .integrantes-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    #painel-integrantes .integrante-card { min-height: 160px; }
+}
+
+@media (max-width: 650px) {
+    #painel-integrantes .equipe-hero {
+        min-height: 300px;
+        padding: 28px 24px;
+    }
+    #painel-integrantes .equipe-hero-grafismo { width: 48%; opacity: .55; }
+    #painel-integrantes .equipe-hero h1 { font-size: 32px; }
+    #painel-integrantes .equipe-hero p { font-size: 14px; }
+    #painel-integrantes .equipe-pilares { gap: 10px 0; }
+    #painel-integrantes .equipe-pilares span { padding: 2px 10px; font-size: 11px; }
+    #painel-integrantes .integrantes-grid { grid-template-columns: 1fr; gap: 14px; }
+    #painel-integrantes .integrante-card { min-height: 145px; padding: 17px; }
+    #painel-integrantes .avatar { flex-basis: 88px; width: 88px; height: 88px; }
+    #painel-integrantes .integrante-card h3 { font-size: 17px; }
+    #painel-integrantes .equipe-final { gap: 16px; padding: 20px; }
+    #painel-integrantes .equipe-final-icone { flex-basis: 54px; font-size: 42px; }
+}
+
+/* Mantém o conteúdo do banner legível em telas estreitas */
+@media (max-width:520px){
+    .blog-hero{
+        min-height:300px;
+        padding:clamp(22px,6vw,30px) clamp(18px,5vw,24px);
+    }
+
+    .blog-hero-conteudo{
+        width:100%;
+        max-width:100%;
+        min-width:0;
+    }
+
+    .blog-destaque{
+        max-width:100%;
+        font-size:11px;
+        letter-spacing:clamp(.4px,.35vw,1px);
+        line-height:1.4;
+        overflow-wrap:anywhere;
+    }
+
+    .blog-hero h1{
+        width:100%;
+        max-width:100%;
+        font-size:clamp(27px,7.6vw,32px);
+        line-height:1.12;
+        overflow-wrap:anywhere;
+    }
+
+    .blog-descricao{
+        max-width:100%;
+        font-size:15px;
+        line-height:1.6;
+        overflow-wrap:anywhere;
+    }
+}

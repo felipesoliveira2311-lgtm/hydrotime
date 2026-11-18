@@ -1,0 +1,9 @@
+:root{
+    --paragrafo:#666;
+    --principal: green;
+    --borda: #00000026;
+    --hoverprincipal: rgb(0, 73, 0);
+    --hoverwhite:rgb(221, 221, 221);
+    --principalClaro: rgba(0, 189, 0, 0.093);
+    --fundo:#f8fbf9;
+}
