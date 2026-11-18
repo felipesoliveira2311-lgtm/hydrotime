@@ -64,13 +64,13 @@ const cardImg=()=>{
         {
             imagem: assetsImg + 'agriculturaFamiliar.png',
             titulo:'Agricultura Familiar',
-            descricao:'Tecnologia aceesível para pequenos produtores, facilitando o monitoramento e o cuidade diário com as plantações',
+            descricao:'Tecnologia acessível para pequenos produtores, facilitando o monitoramento e o cuidade diário com as plantações',
             saibaMais:'',
         },
 
         {
             imagem: assetsImg + 'cultivoIndoor.png',
-            titulo:'cultivo Indoor',
+            titulo:'Cultivo Indoor',
             descricao:'Monitore temperatura, luminosidade e umidade para acompanhar cultivos em ambientes fechados.',
             saibaMais:'',
         },
@@ -85,7 +85,7 @@ const cardImg=()=>{
         {
             imagem: assetsImg + 'hortasUrbanas.png',
             titulo:'Hortas Urbanas',
-            descricao:'Mais praticidade para acompanhar pequenas hortas em residências, condomínios e espeaços comunitários.',
+            descricao:'Mais praticidade para acompanhar pequenas hortas em residências, condomínios e espaços comunitários.',
             saibaMais:'',
         },
 

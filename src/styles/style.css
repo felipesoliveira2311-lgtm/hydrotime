@@ -44,18 +44,24 @@
     margin-block:20px;
     letter-spacing: -0.05em;
     line-height:0.9;
+    color: #123d26;
+
 }
 
 /* H2 */
 .titulo_h2, h2{
     font-size: clamp(1.5rem, 3vw, 2rem);
     letter-spacing: -0.04em;
-    margin-block:10px
+    margin-block:10px;
+    color: #123d26;
+
 }
 
 /* H3 */
 h3{
     font-size:clamp(0.9rem,100vw,1.3vw);
+    color: #123d26;
+
 }
 
 /* p */
