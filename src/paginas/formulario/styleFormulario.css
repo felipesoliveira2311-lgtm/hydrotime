@@ -81,7 +81,7 @@
         display:flex;
         align-items:center;
 
-        background-image: linear-gradient( to right, white 40%, transparent 70%), url('/hydrotime-/src/assets/imagens/imagem%20formulario.png');
+        background-image: linear-gradient( to right, white 40%, transparent 70%), url('/hydrotime/src/assets/imagens/imagem%20formulario.png');
         background-position: left;
     }
 

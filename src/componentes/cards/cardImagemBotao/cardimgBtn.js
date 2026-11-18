@@ -1,7 +1,7 @@
 const cardSolucoes = document.querySelector('#card.solucoes');
 
-const assetsImg = '/hydrotime-/src/assets/banner/solucoes/';
-const assetsIcone = '/hydrotime-/src/assets/icones/';
+const assetsImg = '/hydrotime/src/assets/banner/solucoes/';
+const assetsIcone = '/hydrotime/src/assets/icones/';
 
 const cards = [
     
@@ -76,7 +76,7 @@ const criarCard=(pagina, array)=>{
                             <p class="descricao_card">${card.descricao}</p>
                         </div>
                 
-                        <a class="mais" href="/hydrotime-/src/paginas/formulario/formulario.html">${card.botao}</a>
+                        <a class="mais" href="/hydrotime/src/paginas/formulario/formulario.html">${card.botao}</a>
                     </div>
                    
                     `
