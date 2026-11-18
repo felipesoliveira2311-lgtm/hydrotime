@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Benefícios | SmartTimer – Timer de irrigação </title>
+<title>Benefícios | HydroTime – Timer de irrigação </title>
 <link rel="stylesheet" href="style.css">
 
 <script src="/hydrotime-/src/componentes/menu/menu.js?v=6d2f636" defer></script>
@@ -34,7 +34,7 @@ const B = [
    intro:'Irrigar na hora certa e na quantidade certa mantém o solo na umidade que a cultura precisa, sem estresse hídrico e sem encharcamento.',
    pontos:[['Umidade equilibrada','Cada ciclo de irrigação é programado para manter o solo na faixa ideal durante todo o dia.'],['Menos doenças','Evitar excesso de água reduz fungos e apodrecimento de raízes.'],['Raízes mais fortes','Irrigação regular estimula um sistema radicular profundo e resistente ao calor.']],
    numeros:[['Até 30%','menos plantas perdidas por estresse hídrico*'],['24h','de irrigação programada, inclusive de madrugada'],['+1','ajuste de horário por cultura e por setor']],
-   dt:'Cada cultura tem a sua rotina', dd:'Com o SmartTimer você cria programações diferentes para cada talhão, respeitando o que cada planta exige em cada fase.',
+   dt:'Cada cultura tem a sua rotina', dd:'Com o HydroTime você cria programações diferentes para cada talhão, respeitando o que cada planta exige em cada fase.',
    lista:['Irrigação em horários de menor evaporação','Programações separadas por setor','Pausa automática em dias de chuva'], foto:'20% 60%' },
  { id:'produtividade', icone:'barras', titulo:'Mais produtividade', resumo:'Cultivos mais consistentes e de alta qualidade.',
    intro:'Quando a água chega de forma uniforme e previsível, a lavoura cresce de forma homogênea e a colheita rende mais, com frutos e grãos mais padronizados.',
@@ -46,7 +46,7 @@ const B = [
    intro:'Irrigação manual ou sem controle costuma gastar mais do que a lavoura precisa. Um timer dedicado liga e desliga o sistema exatamente quando deve.',
    pontos:[['Fim do “esqueci ligado”','O sistema desliga sozinho ao final do ciclo, sem depender de alguém lembrar.'],['Menos perda de adubo','Com a água dosada, fertilizantes aplicados via irrigação não são lavados do solo.'],['Menos energia','Bombas funcionam só pelo tempo necessário, reduzindo o consumo elétrico.']],
    numeros:[['Até 40%','menos água usada em comparação ao manejo manual*'],['0','ciclos esquecidos ligados'],['Menos horas','de bomba em funcionamento']],
-   dt:'Cada litro no lugar certo', dd:'O SmartTimer controla duração e frequência de cada irrigação, evitando perdas por escoamento e evaporação.',
+   dt:'Cada litro no lugar certo', dd:'O HydroTime controla duração e frequência de cada irrigação, evitando perdas por escoamento e evaporação.',
    lista:['Duração exata por ciclo','Desligamento automático','Alertas quando algo foge do programado'], foto:'50% 30%' },
  { id:'gestao-dados', icone:'alvo', titulo:'Gestão baseada em dados', resumo:'Decisões mais seguras e estratégicas.',
    intro:'Cada irrigação gera informação. Com o histórico à mão, você deixa de decidir por intuição e passa a ajustar o manejo com base no que realmente aconteceu.',
@@ -72,7 +72,7 @@ const PASSOS = [['Instale','Conecte o timer ao seu sistema de irrigação existe
 
 const cta = `<section class="cta" id="contato"><div class="cta-caixa"><div><h2>Resultados reais para o seu cultivo.</h2><p>Descubra como a tecnologia pode ajudar a sua produção.</p></div><a class="btn btn-claro">Fale com um especialista</a></div></section>`;
 
-const ilustracao = t => `<svg viewBox="0 0 400 280" role="img" aria-label="Ilustração: painel do SmartTimer com gráfico de consumo de água">
+const ilustracao = t => `<svg viewBox="0 0 400 280" role="img" aria-label="Ilustração: painel do HydroTime com gráfico de consumo de água">
   <rect x="8" y="8" width="384" height="264" rx="16" fill="#fff" stroke="#e3ece6"/>
   <text x="28" y="40" font-family="Poppins,sans-serif" font-weight="600" font-size="14" fill="#123d26">${t}</text>
   <circle cx="352" cy="34" r="6" fill="#2f7d4f"/><text x="296" y="38" font-size="11" fill="#5f6f66" font-family="Inter,sans-serif">Ativo</text>
@@ -161,7 +161,7 @@ function render() {
   const id = decodeURIComponent(location.hash.slice(1));
   const b = B.find(x => x.id === id);
   document.getElementById('app').innerHTML = b ? detalhe(b) : home();
-  document.title = (b ? b.titulo : 'Benefícios') + ' | SmartTimer';
+  document.title = (b ? b.titulo : 'Benefícios') + ' | HydroTime';
   if (id !== 'contato') window.scrollTo(0, 0);
 }
 window.addEventListener('hashchange', render);
