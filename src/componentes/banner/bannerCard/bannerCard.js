@@ -3,9 +3,9 @@ const bannerCardIniciar=()=>{
 const  bannerCard = document.querySelector('#bannerCard');
 
 
-const assetsImg = '/hydrotime-/src/assets/banner/solucoes/'
+const assetsImg = '/src/assets/banner/solucoes/'
 
-const assetsIcone = '/hydrotime-/src/assets/icones/'
+const assetsIcone = '/src/assets/icones/'
 
 let indice = 0;
 
@@ -109,7 +109,7 @@ const criarBanner=(objeto, indice)=>{
 
                     <div>
                         <p>${cards[indice].descricaoCard}</p>
-                        <a class="saibaMais" href='/hydrotime-/src/paginas/solucoes/solucoes.html'>${cards[indice].botaoCard}</a>
+                        <a class="saibaMais" href='/src/paginas/solucoes/solucoes.html'>${cards[indice].botaoCard}</a>
                         
                     </div>
                 </div>

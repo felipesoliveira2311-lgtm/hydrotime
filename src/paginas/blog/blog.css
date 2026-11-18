@@ -29,7 +29,7 @@ main {
     padding: 50px 40px;
     display: flex;
     align-items: center;
-    background-image: linear-gradient(90deg, rgba(5, 35, 25, .84) 0%, rgba(5, 35, 25, .58) 48%, rgba(5, 35, 25, .08) 100%), url("assets_site_iot_separados/imagens/banner-hydrotime.png");
+    background-image: linear-gradient(90deg, rgba(5, 35, 25, .84) 0%, rgba(5, 35, 25, .58) 48%, rgba(5, 35, 25, .08) 100%), url("/src/assets/imagens/banner-hydrotime.png.png");
     background-size: cover;
     background-position: center;
     border-radius: 18px;
@@ -528,7 +528,7 @@ main {
     color: #fff;
     background:
         linear-gradient(105deg, rgba(4, 52, 34, .98) 0%, rgba(8, 75, 47, .96) 54%, rgba(15, 91, 54, .76) 100%),
-        url("assets_site_iot_separados/imagens/banner-hydrotime.png") center/cover;
+        url("/src/assets/imagens/banner-hydrotime.png.png") center/cover;
     box-shadow: 0 14px 34px rgba(14, 54, 35, .12);
 }
 

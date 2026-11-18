@@ -1,7 +1,7 @@
 :root {
   --verde-escuro: #123d26; --verde: green; --verde-claro: #e8f3ec; --verde-fundo: #f4faf6;
   --texto: #1b2a22; --texto-suave: #5f6f66; --borda: #e3ece6; --branco: #fff; --fundo:#f4f7f2;
-  --foto: url("foto.jpg");
+  --foto: url("/src/assets/banner/beneficios.png");
 }
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }

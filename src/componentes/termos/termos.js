@@ -262,7 +262,7 @@ const modalTermos = (funcao) => {
 
     conteudo.innerHTML = `
         <div id="fechar">
-            <img src="/hydrotime-/src/assets/icones/x.svg">
+            <img src="/src/assets/icones/x.svg">
         </div>
 
         <div class="conteudo-modal">

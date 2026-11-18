@@ -18,12 +18,12 @@ form.addEventListener('submit', async (event) => {
         let conteudo = document.createElement('div');
         conteudo.classList.add('modalForm');
         conteudo.innerHTML =  `
-            <img id="ok" src="/hydrotime-/src/assets/icones/recebido.svg">
+            <img id="ok" src="/src/assets/icones/recebido.svg">
             <p>
                 Em instantes você receberá um e-mail de confirmação!
             </p>
 
-            <div id="fechar"><img src='/hydrotime-/src/assets/icones/x.svg'></div>
+            <div id="fechar"><img src='/src/assets/icones/x.svg'></div>
             `
 
             recebido.appendChild(conteudo);

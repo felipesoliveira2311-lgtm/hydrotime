@@ -3,7 +3,7 @@ const bannerMain=()=>{
     const bannerMainHome = document.querySelector('#banner_main.home');
     const bannerMainSetores = document.querySelector('#banner_main.setores');
     const bannerMainSolucoes = document.querySelector('#banner_main.solucoes')
-    const assets = '/hydrotime-/src/assets/banner/'
+    const assets = '/src/assets/banner/'
     const paginas = {
         home:{
 
@@ -33,7 +33,7 @@ const bannerMain=()=>{
                 <h2 id='titulo_bannerMain'>${pagina.titulo}</h2>
                 <p id='descricao_bannerMain'>${pagina.descricao}</p>
             </div>
-            <a id="btn" href="/hydrotime-/src/paginas/formulario/formulario.html">${pagina.botao}</a>
+            <a id="btn" href="/src/paginas/formulario/formulario.html">${pagina.botao}</a>
         `
         let titulo = div.querySelector('#titulo_bannerMain');
         titulo.style.color = pagina.corTitulo;

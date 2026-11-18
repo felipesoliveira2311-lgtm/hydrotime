@@ -1,7 +1,7 @@
 const cardIcone=()=>{
     const comoFunciona = document.querySelector('#cardIcone.comoFunciona');
 
-    const assetsIcone = '/hydrotime-/src/assets/icones/'
+    const assetsIcone = '/src/assets/icones/'
 
     const cardIcone = [
         {

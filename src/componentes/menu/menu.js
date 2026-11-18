@@ -7,7 +7,7 @@ const importarMenu = document.getElementById('menu');
 
 
 const buscarMenu = () =>{
-   fetch('/hydrotime-/src/componentes/menu/menu.html?v=6d2f636').then(response => response.text()).then(data =>{
+   fetch('/src/componentes/menu/menu.html?v=6d2f636').then(response => response.text()).then(data =>{
 
     importarMenu.innerHTML = data;
 

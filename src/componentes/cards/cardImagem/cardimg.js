@@ -3,7 +3,7 @@ const cardImg=()=>{
     const home = document.querySelector('#cardImg.home');
     const setores = document.querySelector('#cardImg.setores');
 
-    const assetsImg = '/hydrotime-/src/assets/imagens/imagens_setores/'
+    const assetsImg = '/src/assets/imagens/imagens_setores/'
 
     const cardHome = [
 
@@ -117,7 +117,7 @@ const cardImg=()=>{
                         <h3 class='h3_card'>${card.titulo}</h3>
                         <p class="descricao_card">${card.descricao}</p>
                     </div>
-                        <a class="mais" href="/hydrotime-/src/paginas/setores/setores.html">${card.saibaMais}</a>
+                        <a class="mais" href="/src/paginas/setores/setores.html">${card.saibaMais}</a>
                    
                     `
                 pagina.appendChild(article)
