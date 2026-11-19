@@ -20,6 +20,7 @@ capturarCEP.forEach((botao) => {
 botao.addEventListener('click', ()=>{
     if(cep.value.length != 8 ){
         alert('O campo deve conter 8 digitos.')
+        this.preventDefault();
 
     }
 
