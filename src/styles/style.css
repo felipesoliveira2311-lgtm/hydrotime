@@ -27,6 +27,11 @@
     button{
         cursor: pointer;
     }
+
+    .conteiner_banner{
+        margin-top:100px;
+    }
+
 .conteiner_banner_top{
     border-bottom:5px solid var(--principal);
     padding-bottom:50px;
@@ -87,5 +92,11 @@ p{
     border-top:5px solid var(--principal);
 }
 
+
+@media(max-width:1049px){
+    .conteiner_banner{
+    margin-top:auto;
+    }
+}
 
 

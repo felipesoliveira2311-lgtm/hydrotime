@@ -2,13 +2,14 @@
 
 
 /* ===== Banner ===== */
-#conteiner_banner{
-    background-image: linear-gradient( to right, white 50%, transparent 70%), url('/hydrotime/src/assets/banner/beneficios.png');
-    background-size:cover;
+.conteiner_banner {
+    background-image: linear-gradient(to right, white 50%, transparent 70%), url('/hydrotime/src/assets/banner/beneficios.png');
+    background-size: cover;
     background-position: center;
-    min-height:530px;
+    min-height: 530px;
 
     border-bottom: 5px solid var(--principal);
+    margin-top: 100px;
 }
 
 /* ===== SETORES ===== */
@@ -85,8 +86,13 @@
 }
     /* os cards somem quando a tela for menor que 800px e a imagem do header troca de posição. */
 @media (max-width:800px){
+<<<<<<< HEAD
     #conteiner_banner{
         background-image: linear-gradient( to top, white 70%, transparent 100%), url('/hydrotime/src/assets/banner/home.png');
+=======
+    .conteiner_banner{
+        background-image: linear-gradient( to top, white 70%, transparent 100%), url('/src/assets/banner/home.png');
+>>>>>>> 8426a3e (Adiciona o menu fixo a todas as páginas, ajustes de sobreposição de conteudo, ajustes de responsividade)
         min-height:auto;
     }
 
@@ -190,4 +196,21 @@
 
 #banner_main{
     margin-top:20px;
+}
+
+/* ===== Ajusta espacamento do topo do banner quando o menu troca para Sidebar ===== */
+@media(max-width:1050px){
+    .conteiner_banner{
+        margin-top:0px;
+    }
+}
+
+/* ===== Adiciona background aos cards do banner quando o conteudo passa a sobrepor a imagem */
+
+@media(max-width:1200px){
+    #beneficio_home div{
+        transition:1s;
+        background-color:rgba(255, 255, 255, 0.81);
+        
+    }
 }
