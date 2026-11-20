@@ -17,8 +17,15 @@
             justify-content: space-between;
             align-items: center;
             text-align: center;
-           padding-block:40px;
-           border-bottom:5px solid green;
+             padding-block:40px;
+             border-bottom:5px solid green;
+             min-width:100%;
+             background-color:white;
+             z-index:1;
+             margin-bottom:auto;
+
+            position:fixed;
+            top:0px;
         }
 
 
