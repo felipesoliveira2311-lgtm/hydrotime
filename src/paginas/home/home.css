@@ -86,13 +86,8 @@
 }
     /* os cards somem quando a tela for menor que 800px e a imagem do header troca de posição. */
 @media (max-width:800px){
-<<<<<<< HEAD
-    #conteiner_banner{
-        background-image: linear-gradient( to top, white 70%, transparent 100%), url('/hydrotime/src/assets/banner/home.png');
-=======
     .conteiner_banner{
-        background-image: linear-gradient( to top, white 70%, transparent 100%), url('/src/assets/banner/home.png');
->>>>>>> 8426a3e (Adiciona o menu fixo a todas as páginas, ajustes de sobreposição de conteudo, ajustes de responsividade)
+        background-image: linear-gradient( to top, white 70%, transparent 100%), url('/hydrotime/src/assets/banner/home.png');
         min-height:auto;
     }
 
