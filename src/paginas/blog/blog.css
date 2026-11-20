@@ -24,8 +24,20 @@ body {
 
 main {
     max-width: 1200px;
-    margin: 0 auto;
+    margin-top:120px;
     padding: 30px 24px;
+}
+
+/* ===== Ajustes do menu principal ===== */
+#principal_bar{
+    a{
+        color:black;
+        margin:0px;
+    }
+
+    #contato_principal{
+        color:white;
+    }
 }
 
 .blog-hero {
@@ -857,5 +869,12 @@ main {
         font-size:15px;
         line-height:1.6;
         overflow-wrap:anywhere;
+    }
+}
+
+/* ===== Faz ajuste de margin do menu fixo quando a tela é menor que 1050px */
+@media(max-width:1050px){
+    main{
+        margin-top:0px;
     }
 }

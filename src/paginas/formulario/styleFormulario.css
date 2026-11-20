@@ -75,6 +75,7 @@
     }
 
     #banner_principal{
+        margin-top:100px;
         display:flex;
         min-height:380px;
         border-bottom:5px solid green;
@@ -558,6 +559,14 @@
         transform:translate(-50%, -50%);
         z-index:2;
     }
+    
+    /* ===== Adiciona ajuste de margin-top quando a tela é menor do que 1050px ===== */
+    @media(max-width:1050px){
+        #banner_principal{
+        margin-top:0px;
+        }
+    }
+
 
 
 @media (max-width: 700px){
