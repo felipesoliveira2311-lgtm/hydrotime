@@ -4,13 +4,18 @@ let rua = document.getElementById('rua');
 let bairro = document.getElementById('bairro');
 let cidade = document.getElementById('cidade');
 let estado = document.getElementById('estado');
+let telefone = document.getElementById('telefone')
 
 let valorCEP;
 
-const noText = () =>{
-    cep.addEventListener('input', function() {
+const noText = (campo) =>{    
+    campo.addEventListener('input', function() {
     this.value = this.value.replace(/\D/g, '');     
-})};noText();
+})};
+noText(cep);
+noText(telefone)
+
+
 
 const alertas=()=>{
     cep.addEventListener('input')
