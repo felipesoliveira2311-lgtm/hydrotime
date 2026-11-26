@@ -35,6 +35,11 @@
     #logo{
         max-width: 10%;
         width:10%;
+        font-size:30px;
+    }
+
+    #logo span{
+        color:green;
     }
 
 
