@@ -30,10 +30,10 @@ const cards = [
     },
 
     {
-        imagem: assetsImg + 'analise.JPG',
+        imagem: assetsImg + 'painelsolar.png',
         icone: assetsIcone + 'grafico.svg',
-        titulo:'Análise de Crescimento',
-        descricao:'Acompanhe o desenvolvimento das suas plantas.',
+        titulo:'Energia Solar Inteligente',
+        descricao:'Alimente seu sistema com energia solar, garantindo maior autonomia e sustentabilidade.',
         botao:'→',
     },
 
