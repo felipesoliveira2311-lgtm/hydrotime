@@ -57,7 +57,17 @@
         font-weight: 600;
     }
 
-    #logo{}
+    #logo{
+        max-width: 10%;
+        width:10%;
+        font-size:26px;
+        padding-left:20px;
+    }
+
+    #logo span{
+        color:green;
+    }
+
 
     span{
         color:green;
